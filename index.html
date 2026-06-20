@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>广东旅游景点</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="广东省旅游景点大全，收录21个城市300+景点">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+  <style>
+    :root {
+      --base-font-size: 15px;
+      --theme-color: #1e88e5;
+      --sidebar-width: 280px;
+      --sidebar-nav-link-color--active: #1e88e5;
+      --sidebar-nav-link-border-color--active: #1e88e5;
+      --search-input-border-color: #1e88e5;
+    }
+    .sidebar {
+      padding-top: 10px;
+    }
+    .sidebar-nav {
+      padding-bottom: 50px;
+    }
+    .markdown-section table {
+      display: table;
+      width: 100%;
+    }
+    .markdown-section th,
+    .markdown-section td {
+      padding: 8px 12px;
+      border: 1px solid #e0e0e0;
+    }
+    .markdown-section th {
+      background-color: #f5f5f5;
+      font-weight: 600;
+    }
+    .app-name {
+      text-align: center;
+      padding: 20px 0;
+    }
+    .app-name h1 {
+      font-size: 1.5em;
+      margin: 0;
+      color: #333;
+    }
+    .app-name p {
+      font-size: 0.85em;
+      color: #666;
+      margin: 5px 0 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: '广东旅游景点',
+      repo: '',
+      loadSidebar: true,
+      subMaxLevel: 2,
+      search: {
+        maxAge: 86400000,
+        paths: 'auto',
+        placeholder: '搜索景点...',
+        noData: '未找到相关景点',
+        depth: 3,
+      },
+      auto2top: true,
+      coverpage: true,
+      relativePath: true,
+      pagination: {
+        previousText: '上一章',
+        nextText: '下一章',
+        crossChapter: true,
+        crossChapterText: true,
+      },
+      formatUpdated: '{YYYY}/{MM}/{DD}',
+    }
+  </script>
+  <!-- Docsify -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+  <!-- 搜索插件 -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+  <!-- 图片缩放 -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
+  <!-- 代码高亮 -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-markdown.min.js"></script>
+</body>
+</html>
