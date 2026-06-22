@@ -404,17 +404,20 @@
     window.$docsify.plugins = (window.$docsify.plugins || []).concat(searchResultFileNamePlugin);
 
     // 移动端搜索跳转后自动关闭侧边栏
-    document.addEventListener('click', function (e) {
-      if (window.innerWidth > 768) return;
-      var link = e.target.closest('.results-panel a');
-      if (link) {
-        setTimeout(function () {
+    (function () {
+      var article = document.querySelector('article');
+      if (!article) return;
+      var debounceTimer;
+      new MutationObserver(function () {
+        if (window.innerWidth > 768) return;
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(function () {
           var sidebar = document.querySelector('.sidebar');
           if (sidebar) sidebar.style.transform = 'translateX(-260px)';
           document.body.classList.add('close');
-        }, 100);
-      }
-    });
+        }, 300);
+      }).observe(article, { childList: true, subtree: true });
+    })();
   </script>
 
 </body>
