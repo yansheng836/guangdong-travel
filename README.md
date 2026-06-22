@@ -109,4 +109,4 @@
 
 ---
 
-*最后更新：2024年* | [GitHub](https://github.com/yansheng836/guangdong-travel) | 许可证：CC BY-NC-SA 4.0
+*最后更新：2026年6月* | [GitHub](https://github.com/yansheng836/guangdong-travel) | 许可证：CC BY-NC-SA 4.0
