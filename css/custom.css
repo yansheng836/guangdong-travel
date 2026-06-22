@@ -784,8 +784,42 @@ a:hover {
     overflow-x: auto;
   }
 
+  :root {
+    --sidebar-width: 260px;
+  }
+
   .sidebar {
-    width: 100% !important;
+    width: 260px !important;
+    max-width: 260px !important;
+    box-sizing: border-box;
+  }
+
+  .sidebar-toggle {
+    display: block !important;
+  }
+
+  .content {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  .sidebar .app-name h1 {
+    font-size: 1.1em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .sidebar-nav li a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+  }
+
+  .sidebar .search input {
+    width: calc(100% - 32px) !important;
+    max-width: none;
   }
 
   /* 封面页移动端适配 */
