@@ -26,4 +26,4 @@
   <a href="#/潮州市/">🏛️ 潮州</a>
 </div>
 
-<p><a href="#readme">开始探索 🚀</a></p>
+<p><a href="#/README">开始探索 🚀</a></p>
