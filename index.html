@@ -402,6 +402,19 @@
     }
 
     window.$docsify.plugins = (window.$docsify.plugins || []).concat(searchResultFileNamePlugin);
+
+    // 移动端搜索跳转后自动关闭侧边栏
+    document.addEventListener('click', function (e) {
+      if (window.innerWidth > 768) return;
+      var link = e.target.closest('.results-panel a');
+      if (link) {
+        setTimeout(function () {
+          var sidebar = document.querySelector('.sidebar');
+          if (sidebar) sidebar.style.transform = 'translateX(-260px)';
+          document.body.classList.add('close');
+        }, 100);
+      }
+    });
   </script>
 
 </body>
