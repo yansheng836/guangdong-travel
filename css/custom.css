@@ -481,8 +481,8 @@ a:hover {
   width: calc(100% - 32px);
   padding: 10px 14px;
   border-radius: var(--radius-lg);
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: transparent;
   color: #fff;
   font-size: 0.9em;
   transition: all 0.3s ease;
@@ -494,9 +494,31 @@ a:hover {
 
 .sidebar .search input:focus {
   outline: none;
-  border-color: var(--accent-color);
-  background: rgba(255, 255, 255, 0.15);
-  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* 搜索结果面板 */
+.sidebar .search .results-panel {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.sidebar .search .results-panel a {
+  color: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px 16px;
+}
+
+.sidebar .search .results-panel a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.sidebar .search .results-panel .matching-post {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 /* ============================================
