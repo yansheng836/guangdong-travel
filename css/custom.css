@@ -581,11 +581,8 @@ a:hover {
 .markdown-section table {
   display: table;
   width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
+  border-collapse: collapse;
   margin: 24px 0;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
   box-shadow: var(--shadow-md);
   border: 1px solid var(--border-color);
 }
@@ -599,7 +596,7 @@ a:hover {
   color: #fff;
   font-weight: 600;
   padding: 14px 16px;
-  text-align: left;
+  text-align: center;
   font-size: 0.95em;
   letter-spacing: 0.3px;
 }
