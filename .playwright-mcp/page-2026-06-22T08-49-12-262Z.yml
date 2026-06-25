@@ -1,0 +1,488 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - heading "🌊 广东旅游景点" [level=1] [ref=e4]:
+      - link "🌊 广东旅游景点" [ref=e5] [cursor=pointer]:
+        - /url: "#/?id=%f0%9f%8c%8a-%e5%b9%bf%e4%b8%9c%e6%97%85%e6%b8%b8%e6%99%af%e7%82%b9"
+    - blockquote [ref=e6]:
+      - paragraph [ref=e7]: 探索岭南文化 · 发现广东之美
+    - generic [ref=e8]:
+      - generic [ref=e9]: 🏙️ 21 城市
+      - generic [ref=e10]: 🏛️ 315+ 景点
+      - generic [ref=e11]: 📸 图文详解
+    - generic [ref=e12]:
+      - generic [ref=e13]: A级景区
+      - generic [ref=e14]: 名胜古迹
+      - generic [ref=e15]: 博物馆
+      - generic [ref=e16]: 艺术馆
+      - generic [ref=e17]: 名山
+      - generic [ref=e18]: 公园
+    - generic [ref=e19]:
+      - link "🏙️ 广州" [ref=e20] [cursor=pointer]:
+        - /url: "#/广州市/"
+      - link "🌃 深圳" [ref=e21] [cursor=pointer]:
+        - /url: "#/深圳市/"
+      - link "🐚 珠海" [ref=e22] [cursor=pointer]:
+        - /url: "#/珠海市/"
+      - link "🏭 佛山" [ref=e23] [cursor=pointer]:
+        - /url: "#/佛山市/"
+      - link "🏔️ 韶关" [ref=e24] [cursor=pointer]:
+        - /url: "#/韶关市/"
+      - link "🏛️ 潮州" [ref=e25] [cursor=pointer]:
+        - /url: "#/潮州市/"
+    - paragraph [ref=e26]:
+      - link "开始探索 🚀" [ref=e27] [cursor=pointer]:
+        - /url: "#readme"
+  - main [ref=e28]:
+    - button "Menu" [ref=e29] [cursor=pointer]
+    - complementary [ref=e34]:
+      - searchbox "Search text" [ref=e37]
+      - heading "广东旅游景点" [level=1] [ref=e38]:
+        - link "广东旅游景点" [ref=e39] [cursor=pointer]:
+          - /url: /
+      - list [ref=e41]:
+        - listitem [ref=e42]:
+          - link "首页" [ref=e43] [cursor=pointer]:
+            - /url: "#/"
+          - list [ref=e44]:
+            - listitem [ref=e45]:
+              - link "📊 数据概览" [ref=e46] [cursor=pointer]:
+                - /url: "#/?id=%f0%9f%93%8a-%e6%95%b0%e6%8d%ae%e6%a6%82%e8%a7%88"
+            - listitem [ref=e47]:
+              - link "🎯 景点类型" [ref=e48] [cursor=pointer]:
+                - /url: "#/?id=%f0%9f%8e%af-%e6%99%af%e7%82%b9%e7%b1%bb%e5%9e%8b"
+            - listitem [ref=e49]:
+              - link "🗺️ 城市景点目录" [ref=e50] [cursor=pointer]:
+                - /url: "#/?id=%f0%9f%97%ba%ef%b8%8f-%e5%9f%8e%e5%b8%82%e6%99%af%e7%82%b9%e7%9b%ae%e5%bd%95"
+            - listitem [ref=e51]:
+              - link "🔥 热门景点推荐" [ref=e52] [cursor=pointer]:
+                - /url: "#/?id=%f0%9f%94%a5-%e7%83%ad%e9%97%a8%e6%99%af%e7%82%b9%e6%8e%a8%e8%8d%90"
+            - listitem [ref=e53]:
+              - link "📝 关于本项目" [ref=e54] [cursor=pointer]:
+                - /url: "#/?id=%f0%9f%93%9d-%e5%85%b3%e4%ba%8e%e6%9c%ac%e9%a1%b9%e7%9b%ae"
+        - listitem [ref=e55]:
+          - link "广州市" [ref=e56] [cursor=pointer]:
+            - /url: "#/广州市/"
+          - list [ref=e57]:
+            - listitem [ref=e58]:
+              - link "海珠区" [ref=e59] [cursor=pointer]:
+                - /url: "#/广州市/?id=%e6%b5%b7%e7%8f%a0%e5%8c%ba"
+            - listitem [ref=e60]:
+              - link "越秀区" [ref=e61] [cursor=pointer]:
+                - /url: "#/广州市/?id=%e8%b6%8a%e7%a7%80%e5%8c%ba"
+            - listitem [ref=e62]:
+              - link "荔湾区" [ref=e63] [cursor=pointer]:
+                - /url: "#/广州市/?id=%e8%8d%94%e6%b9%be%e5%8c%ba"
+            - listitem [ref=e64]:
+              - link "天河区" [ref=e65] [cursor=pointer]:
+                - /url: "#/广州市/?id=%e5%a4%a9%e6%b2%b3%e5%8c%ba"
+            - listitem [ref=e66]:
+              - link "白云区" [ref=e67] [cursor=pointer]:
+                - /url: "#/广州市/?id=%e7%99%bd%e4%ba%91%e5%8c%ba"
+            - listitem [ref=e68]:
+              - link "番禺区" [ref=e69] [cursor=pointer]:
+                - /url: "#/广州市/?id=%e7%95%aa%e7%a6%ba%e5%8c%ba"
+            - listitem [ref=e70]:
+              - link "黄埔区" [ref=e71] [cursor=pointer]:
+                - /url: "#/广州市/?id=%e9%bb%84%e5%9f%94%e5%8c%ba"
+            - listitem [ref=e72]:
+              - link "花都区" [ref=e73] [cursor=pointer]:
+                - /url: "#/广州市/?id=%e8%8a%b1%e9%83%bd%e5%8c%ba"
+            - listitem [ref=e74]:
+              - link "从化区" [ref=e75] [cursor=pointer]:
+                - /url: "#/广州市/?id=%e4%bb%8e%e5%8c%96%e5%8c%ba"
+            - listitem [ref=e76]:
+              - link "增城区" [ref=e77] [cursor=pointer]:
+                - /url: "#/广州市/?id=%e5%a2%9e%e5%9f%8e%e5%8c%ba"
+        - listitem [ref=e78]:
+          - link "深圳市" [ref=e79] [cursor=pointer]:
+            - /url: "#/深圳市/"
+        - listitem [ref=e80]:
+          - link "珠海市" [ref=e81] [cursor=pointer]:
+            - /url: "#/珠海市/"
+        - listitem [ref=e82]:
+          - link "汕头市" [ref=e83] [cursor=pointer]:
+            - /url: "#/汕头市/"
+        - listitem [ref=e84]:
+          - link "佛山市" [ref=e85] [cursor=pointer]:
+            - /url: "#/佛山市/"
+        - listitem [ref=e86]:
+          - link "韶关市" [ref=e87] [cursor=pointer]:
+            - /url: "#/韶关市/"
+        - listitem [ref=e88]:
+          - link "河源市" [ref=e89] [cursor=pointer]:
+            - /url: "#/河源市/"
+        - listitem [ref=e90]:
+          - link "梅州市" [ref=e91] [cursor=pointer]:
+            - /url: "#/梅州市/"
+        - listitem [ref=e92]:
+          - link "惠州市" [ref=e93] [cursor=pointer]:
+            - /url: "#/惠州市/"
+        - listitem [ref=e94]:
+          - link "汕尾市" [ref=e95] [cursor=pointer]:
+            - /url: "#/汕尾市/"
+        - listitem [ref=e96]:
+          - link "东莞市" [ref=e97] [cursor=pointer]:
+            - /url: "#/东莞市/"
+        - listitem [ref=e98]:
+          - link "中山市" [ref=e99] [cursor=pointer]:
+            - /url: "#/中山市/"
+        - listitem [ref=e100]:
+          - link "江门市" [ref=e101] [cursor=pointer]:
+            - /url: "#/江门市/"
+        - listitem [ref=e102]:
+          - link "阳江市" [ref=e103] [cursor=pointer]:
+            - /url: "#/阳江市/"
+        - listitem [ref=e104]:
+          - link "湛江市" [ref=e105] [cursor=pointer]:
+            - /url: "#/湛江市/"
+        - listitem [ref=e106]:
+          - link "茂名市" [ref=e107] [cursor=pointer]:
+            - /url: "#/茂名市/"
+        - listitem [ref=e108]:
+          - link "肇庆市" [ref=e109] [cursor=pointer]:
+            - /url: "#/肇庆市/"
+        - listitem [ref=e110]:
+          - link "清远市" [ref=e111] [cursor=pointer]:
+            - /url: "#/清远市/"
+        - listitem [ref=e112]:
+          - link "潮州市" [ref=e113] [cursor=pointer]:
+            - /url: "#/潮州市/"
+        - listitem [ref=e114]:
+          - link "揭阳市" [ref=e115] [cursor=pointer]:
+            - /url: "#/揭阳市/"
+        - listitem [ref=e116]:
+          - link "云浮市" [ref=e117] [cursor=pointer]:
+            - /url: "#/云浮市/"
+    - article [ref=e119]:
+      - heading "🌊 广东旅游景点" [level=1] [ref=e120]:
+        - link "🌊 广东旅游景点" [ref=e121] [cursor=pointer]:
+          - /url: "#/?id=%f0%9f%8c%8a-%e5%b9%bf%e4%b8%9c%e6%97%85%e6%b8%b8%e6%99%af%e7%82%b9"
+      - blockquote [ref=e122]:
+        - paragraph [ref=e123]: 探索岭南文化 · 发现广东之美
+      - separator [ref=e124]
+      - heading "📊 数据概览" [level=2] [ref=e125]:
+        - link "📊 数据概览" [ref=e126] [cursor=pointer]:
+          - /url: "#/?id=%f0%9f%93%8a-%e6%95%b0%e6%8d%ae%e6%a6%82%e8%a7%88"
+      - table [ref=e127]:
+        - rowgroup [ref=e128]:
+          - row "🏙️ 覆盖城市 🏛️ 收录景点 📁 景点类型" [ref=e129]:
+            - columnheader "🏙️ 覆盖城市" [ref=e130]
+            - columnheader "🏛️ 收录景点" [ref=e131]
+            - columnheader "📁 景点类型" [ref=e132]
+        - rowgroup [ref=e133]:
+          - row "21 个 315+ 个 8 大类" [ref=e134]:
+            - cell "21 个" [ref=e135]:
+              - strong [ref=e136]: "21"
+              - text: 个
+            - cell "315+ 个" [ref=e137]:
+              - strong [ref=e138]: 315+
+              - text: 个
+            - cell "8 大类" [ref=e139]:
+              - strong [ref=e140]: "8"
+              - text: 大类
+      - separator [ref=e141]
+      - heading "🎯 景点类型" [level=2] [ref=e142]:
+        - link "🎯 景点类型" [ref=e143] [cursor=pointer]:
+          - /url: "#/?id=%f0%9f%8e%af-%e6%99%af%e7%82%b9%e7%b1%bb%e5%9e%8b"
+      - table [ref=e144]:
+        - rowgroup [ref=e145]:
+          - row "类型 说明" [ref=e146]:
+            - columnheader "类型" [ref=e147]
+            - columnheader "说明" [ref=e148]
+        - rowgroup [ref=e149]:
+          - row "🏞️ A级景区 — 国家认证的高品质旅游景区" [ref=e150]:
+            - cell "🏞️" [ref=e151]
+            - cell "A级景区 — 国家认证的高品质旅游景区" [ref=e152]:
+              - strong [ref=e153]: A级景区
+              - text: — 国家认证的高品质旅游景区
+          - row "🏛️ 名胜古迹 — 历史文化遗迹与古建筑" [ref=e154]:
+            - cell "🏛️" [ref=e155]
+            - cell "名胜古迹 — 历史文化遗迹与古建筑" [ref=e156]:
+              - strong [ref=e157]: 名胜古迹
+              - text: — 历史文化遗迹与古建筑
+          - row "🎭 博物馆 — 了解广东历史文化的好去处" [ref=e158]:
+            - cell "🎭" [ref=e159]
+            - cell "博物馆 — 了解广东历史文化的好去处" [ref=e160]:
+              - strong [ref=e161]: 博物馆
+              - text: — 了解广东历史文化的好去处
+          - row "🎨 艺术馆 — 感受岭南艺术魅力" [ref=e162]:
+            - cell "🎨" [ref=e163]
+            - cell "艺术馆 — 感受岭南艺术魅力" [ref=e164]:
+              - strong [ref=e165]: 艺术馆
+              - text: — 感受岭南艺术魅力
+          - row "📚 图书馆 — 知识的海洋" [ref=e166]:
+            - cell "📚" [ref=e167]
+            - cell "图书馆 — 知识的海洋" [ref=e168]:
+              - strong [ref=e169]: 图书馆
+              - text: — 知识的海洋
+          - row "⛰️ 名山 — 领略广东山水风光" [ref=e170]:
+            - cell "⛰️" [ref=e171]
+            - cell "名山 — 领略广东山水风光" [ref=e172]:
+              - strong [ref=e173]: 名山
+              - text: — 领略广东山水风光
+          - row "🌳 著名公园 — 休闲放松的理想场所" [ref=e174]:
+            - cell "🌳" [ref=e175]
+            - cell "著名公园 — 休闲放松的理想场所" [ref=e176]:
+              - strong [ref=e177]: 著名公园
+              - text: — 休闲放松的理想场所
+          - row "🐼 其他 — 动物园、植物园、海洋馆等" [ref=e178]:
+            - cell "🐼" [ref=e179]
+            - cell "其他 — 动物园、植物园、海洋馆等" [ref=e180]:
+              - strong [ref=e181]: 其他
+              - text: — 动物园、植物园、海洋馆等
+      - separator [ref=e182]
+      - heading "🗺️ 城市景点目录" [level=2] [ref=e183]:
+        - link "🗺️ 城市景点目录" [ref=e184] [cursor=pointer]:
+          - /url: "#/?id=%f0%9f%97%ba%ef%b8%8f-%e5%9f%8e%e5%b8%82%e6%99%af%e7%82%b9%e7%9b%ae%e5%bd%95"
+      - blockquote [ref=e185]:
+        - paragraph [ref=e186]: 💡 点击城市名称查看该市所有景点
+      - heading "🌟 一线城市" [level=3] [ref=e187]:
+        - link "🌟 一线城市" [ref=e188] [cursor=pointer]:
+          - /url: "#/?id=%f0%9f%8c%9f-%e4%b8%80%e7%ba%bf%e5%9f%8e%e5%b8%82"
+      - table [ref=e189]:
+        - rowgroup [ref=e190]:
+          - row "城市 景点数 快速访问" [ref=e191]:
+            - columnheader "城市" [ref=e192]
+            - columnheader "景点数" [ref=e193]
+            - columnheader "快速访问" [ref=e194]
+        - rowgroup [ref=e195]:
+          - row "🏙️ 广州市 54 👉 进入" [ref=e196]:
+            - cell "🏙️ 广州市" [ref=e197]
+            - cell "54" [ref=e198]
+            - cell "👉 进入" [ref=e199]:
+              - link "👉 进入" [ref=e200] [cursor=pointer]:
+                - /url: "#/广州市/"
+          - row "🌃 深圳市 22 👉 进入" [ref=e201]:
+            - cell "🌃 深圳市" [ref=e202]
+            - cell "22" [ref=e203]
+            - cell "👉 进入" [ref=e204]:
+              - link "👉 进入" [ref=e205] [cursor=pointer]:
+                - /url: "#/深圳市/"
+      - heading "🌊 沿海城市" [level=3] [ref=e206]:
+        - link "🌊 沿海城市" [ref=e207] [cursor=pointer]:
+          - /url: "#/?id=%f0%9f%8c%8a-%e6%b2%bf%e6%b5%b7%e5%9f%8e%e5%b8%82"
+      - table [ref=e208]:
+        - rowgroup [ref=e209]:
+          - row "城市 景点数 快速访问" [ref=e210]:
+            - columnheader "城市" [ref=e211]
+            - columnheader "景点数" [ref=e212]
+            - columnheader "快速访问" [ref=e213]
+        - rowgroup [ref=e214]:
+          - row "🐚 珠海市 14 👉 进入" [ref=e215]:
+            - cell "🐚 珠海市" [ref=e216]
+            - cell "14" [ref=e217]
+            - cell "👉 进入" [ref=e218]:
+              - link "👉 进入" [ref=e219] [cursor=pointer]:
+                - /url: "#/珠海市/"
+          - row "🦐 汕头市 13 👉 进入" [ref=e220]:
+            - cell "🦐 汕头市" [ref=e221]
+            - cell "13" [ref=e222]
+            - cell "👉 进入" [ref=e223]:
+              - link "👉 进入" [ref=e224] [cursor=pointer]:
+                - /url: "#/汕头市/"
+          - row "🌴 汕尾市 12 👉 进入" [ref=e225]:
+            - cell "🌴 汕尾市" [ref=e226]
+            - cell "12" [ref=e227]
+            - cell "👉 进入" [ref=e228]:
+              - link "👉 进入" [ref=e229] [cursor=pointer]:
+                - /url: "#/汕尾市/"
+          - row "🚢 江门市 13 👉 进入" [ref=e230]:
+            - cell "🚢 江门市" [ref=e231]
+            - cell "13" [ref=e232]
+            - cell "👉 进入" [ref=e233]:
+              - link "👉 进入" [ref=e234] [cursor=pointer]:
+                - /url: "#/江门市/"
+          - row "☀️ 阳江市 12 👉 进入" [ref=e235]:
+            - cell "☀️ 阳江市" [ref=e236]
+            - cell "12" [ref=e237]
+            - cell "👉 进入" [ref=e238]:
+              - link "👉 进入" [ref=e239] [cursor=pointer]:
+                - /url: "#/阳江市/"
+          - row "🌊 湛江市 14 👉 进入" [ref=e240]:
+            - cell "🌊 湛江市" [ref=e241]
+            - cell "14" [ref=e242]
+            - cell "👉 进入" [ref=e243]:
+              - link "👉 进入" [ref=e244] [cursor=pointer]:
+                - /url: "#/湛江市/"
+          - row "🐟 茂名市 12 👉 进入" [ref=e245]:
+            - cell "🐟 茂名市" [ref=e246]
+            - cell "12" [ref=e247]
+            - cell "👉 进入" [ref=e248]:
+              - link "👉 进入" [ref=e249] [cursor=pointer]:
+                - /url: "#/茂名市/"
+      - heading "🏔️ 粤北山区" [level=3] [ref=e250]:
+        - link "🏔️ 粤北山区" [ref=e251] [cursor=pointer]:
+          - /url: "#/?id=%f0%9f%8f%94%ef%b8%8f-%e7%b2%a4%e5%8c%97%e5%b1%b1%e5%8c%ba"
+      - table [ref=e252]:
+        - rowgroup [ref=e253]:
+          - row "城市 景点数 快速访问" [ref=e254]:
+            - columnheader "城市" [ref=e255]
+            - columnheader "景点数" [ref=e256]
+            - columnheader "快速访问" [ref=e257]
+        - rowgroup [ref=e258]:
+          - row "🏔️ 韶关市 13 👉 进入" [ref=e259]:
+            - cell "🏔️ 韶关市" [ref=e260]
+            - cell "13" [ref=e261]
+            - cell "👉 进入" [ref=e262]:
+              - link "👉 进入" [ref=e263] [cursor=pointer]:
+                - /url: "#/韶关市/"
+          - row "💧 河源市 12 👉 进入" [ref=e264]:
+            - cell "💧 河源市" [ref=e265]
+            - cell "12" [ref=e266]
+            - cell "👉 进入" [ref=e267]:
+              - link "👉 进入" [ref=e268] [cursor=pointer]:
+                - /url: "#/河源市/"
+          - row "🌿 梅州市 12 👉 进入" [ref=e269]:
+            - cell "🌿 梅州市" [ref=e270]
+            - cell "12" [ref=e271]
+            - cell "👉 进入" [ref=e272]:
+              - link "👉 进入" [ref=e273] [cursor=pointer]:
+                - /url: "#/梅州市/"
+          - row "🍃 清远市 13 👉 进入" [ref=e274]:
+            - cell "🍃 清远市" [ref=e275]
+            - cell "13" [ref=e276]
+            - cell "👉 进入" [ref=e277]:
+              - link "👉 进入" [ref=e278] [cursor=pointer]:
+                - /url: "#/清远市/"
+      - heading "🏭 珠三角城市" [level=3] [ref=e279]:
+        - link "🏭 珠三角城市" [ref=e280] [cursor=pointer]:
+          - /url: "#/?id=%f0%9f%8f%ad-%e7%8f%a0%e4%b8%89%e8%a7%92%e5%9f%8e%e5%b8%82"
+      - table [ref=e281]:
+        - rowgroup [ref=e282]:
+          - row "城市 景点数 快速访问" [ref=e283]:
+            - columnheader "城市" [ref=e284]
+            - columnheader "景点数" [ref=e285]
+            - columnheader "快速访问" [ref=e286]
+        - rowgroup [ref=e287]:
+          - row "🏭 佛山市 15 👉 进入" [ref=e288]:
+            - cell "🏭 佛山市" [ref=e289]
+            - cell "15" [ref=e290]
+            - cell "👉 进入" [ref=e291]:
+              - link "👉 进入" [ref=e292] [cursor=pointer]:
+                - /url: "#/佛山市/"
+          - row "🏢 东莞市 11 👉 进入" [ref=e293]:
+            - cell "🏢 东莞市" [ref=e294]
+            - cell "11" [ref=e295]
+            - cell "👉 进入" [ref=e296]:
+              - link "👉 进入" [ref=e297] [cursor=pointer]:
+                - /url: "#/东莞市/"
+          - row "🌃 中山市 12 👉 进入" [ref=e298]:
+            - cell "🌃 中山市" [ref=e299]
+            - cell "12" [ref=e300]
+            - cell "👉 进入" [ref=e301]:
+              - link "👉 进入" [ref=e302] [cursor=pointer]:
+                - /url: "#/中山市/"
+          - row "🌾 惠州市 12 👉 进入" [ref=e303]:
+            - cell "🌾 惠州市" [ref=e304]
+            - cell "12" [ref=e305]
+            - cell "👉 进入" [ref=e306]:
+              - link "👉 进入" [ref=e307] [cursor=pointer]:
+                - /url: "#/惠州市/"
+          - row "🌳 肇庆市 13 👉 进入" [ref=e308]:
+            - cell "🌳 肇庆市" [ref=e309]
+            - cell "13" [ref=e310]
+            - cell "👉 进入" [ref=e311]:
+              - link "👉 进入" [ref=e312] [cursor=pointer]:
+                - /url: "#/肇庆市/"
+      - heading "🌏 粤东城市" [level=3] [ref=e313]:
+        - link "🌏 粤东城市" [ref=e314] [cursor=pointer]:
+          - /url: "#/?id=%f0%9f%8c%8f-%e7%b2%a4%e4%b8%9c%e5%9f%8e%e5%b8%82"
+      - table [ref=e315]:
+        - rowgroup [ref=e316]:
+          - row "城市 景点数 快速访问" [ref=e317]:
+            - columnheader "城市" [ref=e318]
+            - columnheader "景点数" [ref=e319]
+            - columnheader "快速访问" [ref=e320]
+        - rowgroup [ref=e321]:
+          - row "🏛️ 潮州市 13 👉 进入" [ref=e322]:
+            - cell "🏛️ 潮州市" [ref=e323]
+            - cell "13" [ref=e324]
+            - cell "👉 进入" [ref=e325]:
+              - link "👉 进入" [ref=e326] [cursor=pointer]:
+                - /url: "#/潮州市/"
+          - row "🎭 揭阳市 13 👉 进入" [ref=e327]:
+            - cell "🎭 揭阳市" [ref=e328]
+            - cell "13" [ref=e329]
+            - cell "👉 进入" [ref=e330]:
+              - link "👉 进入" [ref=e331] [cursor=pointer]:
+                - /url: "#/揭阳市/"
+          - row "⛰️ 云浮市 12 👉 进入" [ref=e332]:
+            - cell "⛰️ 云浮市" [ref=e333]
+            - cell "12" [ref=e334]
+            - cell "👉 进入" [ref=e335]:
+              - link "👉 进入" [ref=e336] [cursor=pointer]:
+                - /url: "#/云浮市/"
+      - separator [ref=e337]
+      - heading "🔥 热门景点推荐" [level=2] [ref=e338]:
+        - link "🔥 热门景点推荐" [ref=e339] [cursor=pointer]:
+          - /url: "#/?id=%f0%9f%94%a5-%e7%83%ad%e9%97%a8%e6%99%af%e7%82%b9%e6%8e%a8%e8%8d%90"
+      - table [ref=e340]:
+        - rowgroup [ref=e341]:
+          - row "排名 景点 城市 特色" [ref=e342]:
+            - columnheader "排名" [ref=e343]
+            - columnheader "景点" [ref=e344]
+            - columnheader "城市" [ref=e345]
+            - columnheader "特色" [ref=e346]
+        - rowgroup [ref=e347]:
+          - row "🥇 广州塔 广州 城市地标，小蛮腰" [ref=e348]:
+            - cell "🥇" [ref=e349]
+            - cell "广州塔" [ref=e350]:
+              - link "广州塔" [ref=e351] [cursor=pointer]:
+                - /url: "#/广州市/广州市-海珠区-广州塔"
+            - cell "广州" [ref=e352]
+            - cell "城市地标，小蛮腰" [ref=e353]
+          - row "🥈 世界之窗 深圳 微缩世界景观" [ref=e354]:
+            - cell "🥈" [ref=e355]
+            - cell "世界之窗" [ref=e356]:
+              - link "世界之窗" [ref=e357] [cursor=pointer]:
+                - /url: "#/深圳市/深圳市-南山区-世界之窗"
+            - cell "深圳" [ref=e358]
+            - cell "微缩世界景观" [ref=e359]
+          - row "🥉 长隆旅游度假区 广州 主题乐园" [ref=e360]:
+            - cell "🥉" [ref=e361]
+            - cell "长隆旅游度假区" [ref=e362]:
+              - link "长隆旅游度假区" [ref=e363] [cursor=pointer]:
+                - /url: "#/广州市/广州市-番禺区-长隆旅游度假区"
+            - cell "广州" [ref=e364]
+            - cell "主题乐园" [ref=e365]
+          - row "4 丹霞山 韶关 世界地质公园" [ref=e366]:
+            - cell "4" [ref=e367]
+            - cell "丹霞山" [ref=e368]:
+              - link "丹霞山" [ref=e369] [cursor=pointer]:
+                - /url: "#/韶关市/韶关市-仁化县-丹霞山"
+            - cell "韶关" [ref=e370]
+            - cell "世界地质公园" [ref=e371]
+          - row "5 开平碉楼 江门 世界文化遗产" [ref=e372]:
+            - cell "5" [ref=e373]
+            - cell "开平碉楼" [ref=e374]:
+              - link "开平碉楼" [ref=e375] [cursor=pointer]:
+                - /url: "#/江门市/江门市-开平市-开平碉楼"
+            - cell "江门" [ref=e376]
+            - cell "世界文化遗产" [ref=e377]
+      - separator [ref=e378]
+      - heading "📝 关于本项目" [level=2] [ref=e379]:
+        - link "📝 关于本项目" [ref=e380] [cursor=pointer]:
+          - /url: "#/?id=%f0%9f%93%9d-%e5%85%b3%e4%ba%8e%e6%9c%ac%e9%a1%b9%e7%9b%ae"
+      - paragraph [ref=e381]:
+        - strong [ref=e382]: 广东旅游景点
+        - text: 是一个收集整理广东省旅游景点信息的开源项目，旨在为游客提供全面、准确的景点介绍。
+      - heading "📋 内容包含" [level=3] [ref=e383]:
+        - link "📋 内容包含" [ref=e384] [cursor=pointer]:
+          - /url: "#/?id=%f0%9f%93%8b-%e5%86%85%e5%ae%b9%e5%8c%85%e5%90%ab"
+      - list [ref=e385]:
+        - listitem [ref=e386]: ✅ 景点介绍与特色
+        - listitem [ref=e387]: ✅ 详细位置信息
+        - listitem [ref=e388]: ✅ 交通指南
+        - listitem [ref=e389]: ✅ 开放时间与门票
+        - listitem [ref=e390]: ✅ 景点图片
+      - heading "🤝 参与贡献" [level=3] [ref=e391]:
+        - link "🤝 参与贡献" [ref=e392] [cursor=pointer]:
+          - /url: "#/?id=%f0%9f%a4%9d-%e5%8f%82%e4%b8%8e%e8%b4%a1%e7%8c%ae"
+      - paragraph [ref=e393]: 欢迎提交 Issue 或 Pull Request 来完善景点信息！
+      - separator [ref=e394]
+      - paragraph [ref=e395]:
+        - emphasis [ref=e396]: 最后更新：2026年6月
+        - text: "|"
+        - link "GitHub" [ref=e397] [cursor=pointer]:
+          - /url: https://github.com/yansheng836/guangdong-travel
+        - text: "| 许可证：CC BY-NC-SA 4.0"
