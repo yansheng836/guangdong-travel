@@ -32,6 +32,36 @@ Attraction files: `{市}-{区县}-{景点名}.md` under the city directory — e
 - Include images where possible (景点图片)
 - License: CC BY-NC-SA 4.0
 
+## 城市 README 排序规则
+
+各城市 `README.md` 中的景点表格必须遵循以下排序规则：
+
+### 区县分组顺序
+- 按行政区划顺序排列（市辖区在前，县/县级市在后）
+- 同级区县按名称拼音排序
+
+### 区县内景点排序
+同一区县内的景点按以下优先级排序，同级景点按景点名称拼音排序：
+
+1. **5A级景区**
+2. **4A级景区**
+3. **全国重点文物保护单位**
+4. **省级文物保护单位 / 省级历史文化名村**
+5. **其他景点**（按名称拼音排序）
+
+### 示例
+
+```
+## 南山区
+| 景点名称 | 景点等级 | 景点类型 | 文件 |
+|----------|----------|----------|------|
+| 欢乐谷 | 5A | 主题公园 | ... |
+| 世界之窗 | 4A | 主题公园 | ... |
+| 锦绣中华民俗村 | 4A | 主题公园 | ... |
+| 海上世界 | - | 综合性滨海休闲区 | ... |
+| 华侨城创意文化园 | - | 文化创意园区 | ... |
+```
+
 ## Sibling Project
 
 The `guangdong-schools` project in the same workspace follows the same structural pattern — reference it for conventions when unsure.
