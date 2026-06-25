@@ -32,6 +32,42 @@ Attraction files: `{市}-{区县}-{景点名}.md` under the city directory — e
 - Include images where possible (景点图片)
 - License: CC BY-NC-SA 4.0
 
+## 景点文件章节顺序
+
+景点文件的章节必须按以下顺序排列：
+
+```markdown
+# 景点名称
+## 景点图片        ← 紧跟标题之后
+## 基本信息
+## 景点介绍
+## 景点特点
+## 位置
+## 交通
+## 数据来源
+## 最后更新时间
+```
+
+## 景点图片规范
+
+### 图片来源
+优先从以下来源获取图片（按优先级）：
+1. **Wikimedia Commons**（首选，CC BY-SA 许可证）
+2. 景点官方网站
+3. 其他开放许可图片源
+
+### 图片格式
+```markdown
+![景点名称](图片URL)
+
+> 图片来源：[来源名称](来源页面URL) · 许可证：许可证类型
+```
+
+### 验证要求
+- **必须验证图片 URL 可访问**：使用 `curl -sI <URL>` 检查返回 HTTP 200
+- **避免 404 链接**：禁止使用未经验证的图片 URL
+- **优先使用缩略图**：Wikimedia Commons 图片优先使用缩略图 URL（如 `/800px-filename.jpg`），减少加载时间
+
 ## 城市 README 排序规则
 
 各城市 `README.md` 中的景点表格必须遵循以下排序规则：
