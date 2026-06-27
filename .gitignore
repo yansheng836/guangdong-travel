@@ -15,3 +15,13 @@ node_modules/
 
 # Misc
 *.log
+
+# Images — 忽略原图，保留压缩后的图片 (_compressed.*)
+*.jpg
+*.jpeg
+*.png
+*.webp
+!*_compressed.jpg
+!*_compressed.jpeg
+!*_compressed.png
+!*_compressed.webp

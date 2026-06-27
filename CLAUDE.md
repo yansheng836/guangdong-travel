@@ -68,6 +68,24 @@ Attraction files: `{市}-{区县}-{景点名}.md` under the city directory — e
 - **避免 404 链接**：禁止使用未经验证的图片 URL
 - **优先使用缩略图**：Wikimedia Commons 图片优先使用缩略图 URL（如 `/800px-filename.jpg`），减少加载时间
 
+### 本地图片压缩
+使用 `compress.py` 脚本批量压缩项目中的本地图片：
+
+```bash
+python compress.py                        # 压缩图片（已有对应压缩文件则跳过）
+python compress.py --update               # 压缩 + 自动更新景点文件引用
+python compress.py --dry-run              # 预览
+python compress.py --quality 85           # 调质量 (1-100, 默认 75)
+python compress.py --max-w 1600           # 调最大宽度 (默认 1920)
+python compress.py 广州市/images          # 指定目录
+```
+
+- 压缩后保存为 `原文件名_compressed.jpg`
+- 已存在对应压缩文件的图片自动跳过
+- 路径引用使用相对路径（如 `images/广州塔_compressed.jpg`）
+- 依赖 Pillow，无其他第三方库
+
+
 ## 城市 README 排序规则
 
 各城市 `README.md` 中的景点表格必须遵循以下排序规则：
