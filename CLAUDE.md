@@ -50,40 +50,59 @@ Attraction files: `{市}-{区县}-{景点名}.md` under the city directory — e
 
 ## 景点图片规范
 
-### 图片来源
-优先从以下来源获取图片（按优先级）：
+### 图片来源（按优先级）
 1. **Wikimedia Commons**（首选，CC BY-SA 许可证）
 2. 景点官方网站
 3. 其他开放许可图片源
 
+### 图片下载与存储
+- 图片必须下载到该城市目录下的 `images/` 目录（如 `广州市/images/`）
+- **文件名必须与景点 Markdown 文件命名一致**，例如：
+  - `广州市-海珠区-广州塔.md` → `images/广州市-海珠区-广州塔.jpg`
+  - `广州市-越秀区-白云山.md` → `images/广州市-越秀区-白云山.jpg`
+- 压缩后的图片文件名保持相同规则，添加 `_compressed` 后缀：
+  - `images/广州市-海珠区-广州塔.jpg` → `images/广州市-海珠区-广州塔_compressed.jpg`
+- 引用路径使用相对路径：`images/广州市-海珠区-广州塔_compressed.jpg`
+
+### 图片压缩
+所有本地图片必须经过压缩，使用项目根目录的 `compress.py` 脚本：
+
+```bash
+# 压缩指定城市 images/ 目录下的所有图片
+python compress.py 广州市/images
+
+# 压缩后自动更新景点文件引用（使用 _compressed.jpg）
+python compress.py --update 广州市/images
+
+# 预览模式，显示将执行的操作但不实际执行
+python compress.py --dry-run 广州市/images
+
+# 调整压缩质量（1-100，默认 75）
+python compress.py --quality 85 广州市/images
+
+# 调整最大宽度（默认 1920）
+python compress.py --max-w 1600 广州市/images
+```
+
+- 压缩后保存为 `原文件名_compressed.jpg`（如 `广州市-海珠区-广州塔_compressed.jpg`）
+- **保留原图**：已存在对应压缩文件的原始图片不要删除，原图和压缩版同时保留
+- 已存在对应压缩文件的图片自动跳过
+- 引用路径使用相对路径（如 `images/广州市-海珠区-广州塔_compressed.jpg`），**必须引用压缩后的 `_compressed.jpg` 文件**
+- 依赖 Pillow，无其他第三方库
+- 依赖 Pillow，无其他第三方库
+
 ### 图片格式
 ```markdown
-![景点名称](图片URL)
+![景点名称](images/景点名称_compressed.jpg)
 
 > 图片来源：[来源名称](来源页面URL) · 许可证：许可证类型
 ```
 
-### 验证要求
-- **必须验证图片 URL 可访问**：使用 `curl -sI <URL>` 检查返回 HTTP 200
-- **避免 404 链接**：禁止使用未经验证的图片 URL
-- **优先使用缩略图**：Wikimedia Commons 图片优先使用缩略图 URL（如 `/800px-filename.jpg`），减少加载时间
-
-### 本地图片压缩
-使用 `compress.py` 脚本批量压缩项目中的本地图片：
-
-```bash
-python compress.py                        # 压缩图片（已有对应压缩文件则跳过）
-python compress.py --update               # 压缩 + 自动更新景点文件引用
-python compress.py --dry-run              # 预览
-python compress.py --quality 85           # 调质量 (1-100, 默认 75)
-python compress.py --max-w 1600           # 调最大宽度 (默认 1920)
-python compress.py 广州市/images          # 指定目录
-```
-
-- 压缩后保存为 `原文件名_compressed.jpg`
-- 已存在对应压缩文件的图片自动跳过
-- 路径引用使用相对路径（如 `images/广州塔_compressed.jpg`）
-- 依赖 Pillow，无其他第三方库
+### 原有在线图片迁移
+对于已有 Wikimedia Commons 在线图片的景点：
+1. 下载原图到 `images/` 目录
+2. 运行 `python compress.py --update <城市>/images` 压缩并更新引用
+3. 保留 `> 图片来源：` 行（指向 Wikimedia Commons 页面，仅用于版权说明）
 
 
 ## 城市 README 排序规则

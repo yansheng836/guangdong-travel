@@ -51,7 +51,7 @@ def compress_image(filepath: Path, quality: int, max_width: int, dry_run: bool =
     if width > max_width:
         ratio = max_width / width
         new_size = (int(width * ratio), int(height * ratio))
-        img = img.resize(Image.LANCZOS, new_size)
+        img = img.resize(new_size, Image.LANCZOS)
         width, height = img.size
 
     out_format = "JPEG" if original_format and original_format.upper() in ("JPEG", "JPG") else "JPEG"
