@@ -89,14 +89,17 @@ python compress.py --max-w 1600 广州市/images
 - 已存在对应压缩文件的图片自动跳过
 - 引用路径使用相对路径（如 `images/广州市-海珠区-广州塔_compressed.jpg`），**必须引用压缩后的 `_compressed.jpg` 文件**
 - 依赖 Pillow，无其他第三方库
-- 依赖 Pillow，无其他第三方库
 
 ### 图片格式
 ```markdown
 ![景点名称](images/景点名称_compressed.jpg)
-
-> 图片来源：[来源名称](来源页面URL) · 许可证：许可证类型
 ```
+
+- **图片来源行（可选）**：仅当图片来自 Wikimedia Commons 等需要版权声明的来源时，才添加 `> 图片来源` 行，格式如下：
+  ```markdown
+  > 图片来源：[来源名称](来源页面URL) · 许可证：许可证类型
+  ```
+- 手动提供的照片（如用户指定 URL、百度图片等）**不需要** `> 图片来源` 行
 
 ### 原有在线图片迁移
 对于已有 Wikimedia Commons 在线图片的景点：
