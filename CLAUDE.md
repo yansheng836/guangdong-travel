@@ -51,11 +51,13 @@ Attraction files: `{市}-{区县}-{景点名}.md` under the city directory — e
 ## 景点图片规范
 
 ### 图片来源（按优先级）
+
 1. **Wikimedia Commons**（首选，CC BY-SA 许可证）
 2. 景点官方网站
 3. 其他开放许可图片源
 
 ### 图片下载与存储
+
 - 图片必须下载到该城市目录下的 `images/` 目录（如 `广州市/images/`）
 - **文件名必须与景点 Markdown 文件命名一致**，例如：
   - `广州市-海珠区-广州塔.md` → `images/广州市-海珠区-广州塔.jpg`
@@ -65,6 +67,7 @@ Attraction files: `{市}-{区县}-{景点名}.md` under the city directory — e
 - 引用路径使用相对路径：`images/广州市-海珠区-广州塔_compressed.jpg`
 
 ### 图片压缩
+
 所有本地图片必须经过压缩，使用项目根目录的 `compress.py` 脚本：
 
 ```bash
@@ -91,32 +94,38 @@ python compress.py --max-w 1600 广州市/images
 - 依赖 Pillow，无其他第三方库
 
 ### 图片格式
+
 ```markdown
 ![景点名称](images/景点名称_compressed.jpg)
 ```
 
 - **图片来源行（可选）**：仅当图片来自 Wikimedia Commons 等需要版权声明的来源时，才添加 `> 图片来源` 行，格式如下：
+
   ```markdown
   > 图片来源：[来源名称](来源页面URL) · 许可证：许可证类型
   ```
+
 - 手动提供的照片（如用户指定 URL、百度图片等）**不需要** `> 图片来源` 行
 
 ### 原有在线图片迁移
+
 对于已有 Wikimedia Commons 在线图片的景点：
+
 1. 下载原图到 `images/` 目录
 2. 运行 `python compress.py --update <城市>/images` 压缩并更新引用
 3. 保留 `> 图片来源：` 行（指向 Wikimedia Commons 页面，仅用于版权说明）
-
 
 ## 城市 README 排序规则
 
 各城市 `README.md` 中的景点表格必须遵循以下排序规则：
 
 ### 区县分组顺序
+
 - 按行政区划顺序排列（市辖区在前，县/县级市在后）
 - 同级区县按名称拼音排序
 
 ### 区县内景点排序
+
 同一区县内的景点按以下优先级排序，同级景点按景点名称拼音排序：
 
 1. **5A级景区**
@@ -127,7 +136,7 @@ python compress.py --max-w 1600 广州市/images
 
 ### 示例
 
-```
+```markdown
 ## 南山区
 | 景点名称 | 景点等级 | 景点类型 | 文件 |
 |----------|----------|----------|------|
