@@ -8,6 +8,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
   <link rel="stylesheet" href="css/custom.css">
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 </head>
 <body>
   <div id="app"></div>
@@ -414,6 +417,90 @@
           document.body.classList.add('close');
         }, 300);
       }).observe(article, { childList: true, subtree: true });
+    })();
+  </script>
+
+  <!-- 地图插件：自动从经纬度字段生成 Leaflet 地图 -->
+  <script>
+    (function () {
+      var currentMap = null;
+
+      function removeMap() {
+        if (currentMap) {
+          currentMap.remove();
+          currentMap = null;
+        }
+        var el = document.getElementById('attraction-map');
+        if (el) el.remove();
+      }
+
+      function parseCoord(text) {
+        // 支持格式: "23.1066°N, 113.3245°E" 或 "23.1066, 113.3245"
+        var m = text.match(/([\d.]+)°?[NS]?[,，]\s*([\d.]+)°?[EW]?/);
+        if (m) return [parseFloat(m[1]), parseFloat(m[2])];
+        m = text.match(/([\d.]+)\s*[,，]\s*([\d.]+)/);
+        if (m) return [parseFloat(m[1]), parseFloat(m[2])];
+        return null;
+      }
+
+      function getAttractionName() {
+        var h1 = document.querySelector('.markdown-section h1');
+        return h1 ? h1.textContent.trim() : '景点';
+      }
+
+      function initMap() {
+        removeMap();
+        if (typeof L === 'undefined') return;
+
+        var section = document.querySelector('.markdown-section');
+        if (!section) return;
+
+        // 查找包含经纬度的列表项
+        var items = section.querySelectorAll('li');
+        var coordItem = null;
+        for (var i = 0; i < items.length; i++) {
+          if (items[i].textContent.indexOf('经纬度') !== -1) {
+            coordItem = items[i];
+            break;
+          }
+        }
+        if (!coordItem) return;
+
+        var coord = parseCoord(coordItem.textContent);
+        if (!coord) return;
+
+        var list = coordItem.parentElement;
+        if (!list) return;
+
+        var container = document.createElement('div');
+        container.id = 'attraction-map';
+        container.style.cssText = 'height:400px;width:100%;border-radius:12px;margin:16px 0;';
+
+        list.parentNode.insertBefore(container, list.nextSibling);
+
+        var map = L.map('attraction-map', {
+          center: coord,
+          zoom: 15,
+          zoomControl: true
+        });
+
+        L.tileLayer('https://webrd01.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=8&x={x}&y={y}&z={z}', {
+          maxZoom: 18,
+          subdomains: ['webrd01', 'webrd02', 'webrd03', 'webrd04'],
+          attribution: '&copy; 高德地图'
+        }).addTo(map);
+
+        L.marker(coord).addTo(map).bindPopup(getAttractionName());
+
+        // 修复 Docsify 切换页面后的尺寸问题
+        setTimeout(function () { map.invalidateSize(); }, 200);
+
+        currentMap = map;
+      }
+
+      window.$docsify.plugins = (window.$docsify.plugins || []).concat(function (hook) {
+        hook.doneEach(initMap);
+      });
     })();
   </script>
 

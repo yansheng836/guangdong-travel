@@ -923,6 +923,22 @@ a:hover {
 }
 
 /* ============================================
+   地图容器样式
+   ============================================ */
+
+#attraction-map {
+  z-index: 1;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-md);
+}
+
+@media screen and (max-width: 768px) {
+  #attraction-map {
+    height: 280px !important;
+  }
+}
+
+/* ============================================
    动画效果
    ============================================ */
 
