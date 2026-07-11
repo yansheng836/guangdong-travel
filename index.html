@@ -517,19 +517,18 @@
         });
 
         // 地图图层定义
-        var gaodeSubdomains = ['01', '02', '03', '04'];
         var gaodeAttr = '&copy; 高德地图';
 
         var normalMap = L.tileLayer('https://webrd{s}.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=8&x={x}&y={y}&z={z}', {
-          maxZoom: 18, subdomains: gaodeSubdomains, attribution: gaodeAttr
+          maxZoom: 18, subdomains: ['01', '02', '03', '04'], attribution: gaodeAttr
         });
 
-        var satelliteMap = L.tileLayer('https://webrd{s}.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=6&x={x}&y={y}&z={z}', {
-          maxZoom: 18, subdomains: gaodeSubdomains, attribution: gaodeAttr
+        var satelliteMap = L.tileLayer('https://webst{s}.is.autonavi.com/appmaptile?style=6&x={x}&y={y}&z={z}', {
+          maxZoom: 18, subdomains: ['01', '02', '03', '04'], attribution: gaodeAttr
         });
 
-        var hybridMap = L.tileLayer('https://webrd{s}.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=7&x={x}&y={y}&z={z}', {
-          maxZoom: 18, subdomains: gaodeSubdomains, attribution: gaodeAttr
+        var hybridMap = L.tileLayer('https://webst{s}.is.autonavi.com/appmaptile?style=7&x={x}&y={y}&z={z}', {
+          maxZoom: 18, subdomains: ['01', '02', '03', '04'], attribution: gaodeAttr
         });
 
         normalMap.addTo(map);
