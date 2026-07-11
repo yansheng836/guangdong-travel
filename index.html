@@ -420,10 +420,44 @@
     })();
   </script>
 
-  <!-- 地图插件：自动从经纬度字段生成 Leaflet 地图 -->
+  <!-- 地图插件：自动从经纬度字段生成 Leaflet 地图，标注附近景点 -->
   <script>
     (function () {
       var currentMap = null;
+      var allAttractions = null;
+
+      // 加载景点坐标数据
+      function loadAttractionsData(callback) {
+        if (allAttractions) { callback(); return; }
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'attractions-geo.json', true);
+        xhr.onload = function () {
+          if (xhr.status === 200) {
+            try {
+              allAttractions = JSON.parse(xhr.responseText).attractions;
+            } catch (e) {
+              allAttractions = [];
+            }
+          } else {
+            allAttractions = [];
+          }
+          callback();
+        };
+        xhr.onerror = function () { allAttractions = []; callback(); };
+        xhr.send();
+      }
+
+      // Haversine 距离计算（单位：米）
+      function haversineDist(lat1, lng1, lat2, lng2) {
+        var R = 6371000;
+        var dLat = (lat2 - lat1) * Math.PI / 180;
+        var dLng = (lng2 - lng1) * Math.PI / 180;
+        var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+                Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+                Math.sin(dLng / 2) * Math.sin(dLng / 2);
+        var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+        return R * c;
+      }
 
       function removeMap() {
         if (currentMap) {
@@ -435,7 +469,6 @@
       }
 
       function parseCoord(text) {
-        // 支持格式: "23.1066°N, 113.3245°E" 或 "23.1066, 113.3245"
         var m = text.match(/([\d.]+)°?[NS]?[,，]\s*([\d.]+)°?[EW]?/);
         if (m) return [parseFloat(m[1]), parseFloat(m[2])];
         m = text.match(/([\d.]+)\s*[,，]\s*([\d.]+)/);
@@ -455,7 +488,6 @@
         var section = document.querySelector('.markdown-section');
         if (!section) return;
 
-        // 查找包含经纬度的列表项
         var items = section.querySelectorAll('li');
         var coordItem = null;
         for (var i = 0; i < items.length; i++) {
@@ -490,15 +522,138 @@
           attribution: '&copy; 高德地图'
         }).addTo(map);
 
-        L.marker(coord).addTo(map).bindPopup(getAttractionName());
+        // 当前景点标记（红色圆点 + 名称标签）
+        var currentName = getAttractionName();
+        L.marker(coord, {
+          icon: L.divIcon({
+            className: 'marker-current',
+            html: '<div style="display:flex;align-items:center;gap:4px;">' +
+                  '<span style="background:#e74c3c;color:#fff;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:600;box-shadow:0 2px 8px rgba(0,0,0,0.3);border:3px solid #fff;flex-shrink:0;">📍</span>' +
+                  '<span style="background:rgba(231,76,60,0.9);color:#fff;padding:2px 10px;border-radius:4px;font-size:13px;font-weight:600;white-space:nowrap;box-shadow:0 1px 4px rgba(0,0,0,0.2);">' + currentName + '</span>' +
+                  '</div>',
+            iconSize: [240, 40],
+            iconAnchor: [16, 16]
+          })
+        }).addTo(map).bindPopup('<b>' + currentName + '</b><br><span style="color:#888;font-size:12px;">当前景点</span>');
 
-        // 修复 Docsify 切换页面后的尺寸问题
+        // 查找并标注附近景点
+        if (allAttractions && allAttractions.length > 0) {
+          var lat = coord[0], lng = coord[1];
+          var nearby = [];
+
+          for (var j = 0; j < allAttractions.length; j++) {
+            var a = allAttractions[j];
+            var dist = haversineDist(lat, lng, a.lat, a.lng);
+            if (dist < 10) continue; // 跳过当前景点（距离小于10米视为同一点）
+            if (dist <= 5000) {
+              a.distance = Math.round(dist);
+              nearby.push(a);
+            }
+          }
+
+          // 按距离排序
+          nearby.sort(function (a, b) { return a.distance - b.distance; });
+
+          // 最多显示 15 个附近景点
+          if (nearby.length > 15) nearby = nearby.slice(0, 15);
+
+          // 绿色编号圆点标记
+          var placedLabels = [];
+          var labelOffsets = [
+            { mt: -30, ml: 16 },  // 右上
+            { mt: -8,  ml: 16 },  // 右
+            { mt: 14,  ml: 16 },  // 右下
+            { mt: 14,  ml: -60 }, // 下
+            { mt: 14,  ml: -140 },// 左下
+            { mt: -8,  ml: -140 },// 左
+            { mt: -30, ml: -140 },// 左上
+            { mt: -30, ml: -60 }, // 上
+          ];
+
+          function findLabelOffset(name, point, existing) {
+            var labelW = name.length * 13 + 16;
+            var labelH = 20;
+            for (var p = 0; p < labelOffsets.length; p++) {
+              var off = labelOffsets[p];
+              var bx = point.x + off.ml;
+              var by = point.y + off.mt;
+              var overlap = false;
+              for (var e = 0; e < existing.length; e++) {
+                var ex = existing[e];
+                if (bx < ex.x + ex.w && bx + labelW > ex.x &&
+                    by < ex.y + ex.h && by + labelH > ex.y) {
+                  overlap = true;
+                  break;
+                }
+              }
+              if (!overlap) {
+                existing.push({ x: bx, y: by, w: labelW, h: labelH });
+                return off;
+              }
+            }
+            return null;
+          }
+
+          for (var k = 0; k < nearby.length; k++) {
+            var na = nearby[k];
+            var distanceText = na.distance < 1000 ? na.distance + 'm' : (na.distance / 1000).toFixed(1) + 'km';
+
+            // 编号圆点
+            L.marker([na.lat, na.lng], {
+              icon: L.divIcon({
+                className: 'marker-nearby',
+                html: '<div style="background:#27ae60;color:#fff;width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600;box-shadow:0 2px 6px rgba(0,0,0,0.25);border:2px solid #fff;">' + (k + 1) + '</div>',
+                iconSize: [26, 26],
+                iconAnchor: [13, 13]
+              })
+            }).addTo(map).bindPopup(
+              '<b>' + na.name + '</b><br>' +
+              '<span style="color:#666;font-size:12px;">距当前景点 ' + distanceText + '</span>'
+            );
+
+            // 错开布局的名称标签
+            var point = map.latLngToContainerPoint(L.latLng(na.lat, na.lng));
+            var offset = findLabelOffset(na.name, point, placedLabels);
+            if (offset) {
+              L.marker([na.lat, na.lng], {
+                icon: L.divIcon({
+                  className: '',
+                  html: '<div style="position:relative;width:1px;height:1px;overflow:visible;">' +
+                        '<div style="position:absolute;top:' + offset.mt + 'px;left:' + offset.ml + 'px;background:rgba(39,174,96,0.9);color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;white-space:nowrap;box-shadow:0 1px 4px rgba(0,0,0,0.2);">' + na.name + '</div>' +
+                        '</div>',
+                  iconSize: [1, 1],
+                  iconAnchor: [0, 0]
+                })
+              }).addTo(map);
+            }
+          }
+
+          // 地图图例
+          var legend = L.control({ position: 'bottomleft' });
+          legend.onAdd = function () {
+            var div = L.DomUtil.create('div', 'map-legend');
+            div.innerHTML =
+              '<div style="background:#fff;padding:8px 12px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.15);font-size:13px;line-height:1.6;">' +
+              '<div style="font-weight:600;margin-bottom:4px;">📍 附近景点</div>' +
+              '<div><span style="display:inline-block;width:12px;height:12px;background:#e74c3c;border-radius:50%;margin-right:6px;"></span>当前景点</div>' +
+              '<div><span style="display:inline-block;width:12px;height:12px;background:#27ae60;border-radius:50%;margin-right:6px;"></span>周边景点（5km内）</div>' +
+              (nearby.length > 0 ? '<div style="color:#999;font-size:11px;margin-top:4px;">共 ' + nearby.length + ' 个</div>' : '') +
+              '</div>';
+            return div;
+          };
+          legend.addTo(map);
+        }
+
         setTimeout(function () { map.invalidateSize(); }, 200);
 
         currentMap = map;
       }
 
+      // 预加载数据 + 注册插件
       window.$docsify.plugins = (window.$docsify.plugins || []).concat(function (hook) {
+        hook.init(function () {
+          loadAttractionsData(function () {});
+        });
         hook.doneEach(initMap);
       });
     })();

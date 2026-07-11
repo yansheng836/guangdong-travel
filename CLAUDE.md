@@ -32,6 +32,20 @@ Attraction files: `{市}-{区县}-{景点名}.md` under the city directory — e
 2. **删除景点**：从对应城市目录的 `README.md` 中移除该景点的表格行，同时递减根目录 `README.md` 中的景点总数
 3. **重命名景点**：同时更新对应城市目录 `README.md` 中的景点名称（显示文本）和文件链接，根目录 `README.md` 中的数量统计不变
 
+## 地图坐标数据同步规则
+
+`attractions-geo.json` 是 Leaflet 地图展示附近景点所需的坐标数据文件。
+
+1. **修改地址或经纬度**：当景点文件的地址或经纬度信息发生变更时，必须重新生成 `attractions-geo.json`
+2. **新增景点**（含经纬度）：新增景点文件后，必须重新生成 `attractions-geo.json`
+3. **删除景点**：删除景点文件后，必须重新生成 `attractions-geo.json`
+
+重新生成命令：
+
+```bash
+python scripts/extract_coords.py
+```
+
 ## Key Conventions
 
 - All content is in Chinese (Simplified)
@@ -76,23 +90,23 @@ Attraction files: `{市}-{区县}-{景点名}.md` under the city directory — e
 
 ### 图片压缩
 
-所有本地图片必须经过压缩，使用项目根目录的 `compress.py` 脚本：
+所有本地图片必须经过压缩，使用项目根目录的 `scripts/compress.py` 脚本：
 
 ```bash
 # 压缩指定城市 images/ 目录下的所有图片
-python compress.py 广州市/images
+python scripts/compress.py 广州市/images
 
 # 压缩后自动更新景点文件引用（使用 _compressed.jpg）
-python compress.py --update 广州市/images
+python scripts/compress.py --update 广州市/images
 
 # 预览模式，显示将执行的操作但不实际执行
-python compress.py --dry-run 广州市/images
+python scripts/compress.py --dry-run 广州市/images
 
 # 调整压缩质量（1-100，默认 75）
-python compress.py --quality 85 广州市/images
+python scripts/compress.py --quality 85 广州市/images
 
 # 调整最大宽度（默认 1920）
-python compress.py --max-w 1600 广州市/images
+python scripts/compress.py --max-w 1600 广州市/images
 ```
 
 - 压缩后保存为 `原文件名_compressed.jpg`（如 `广州市-海珠区-广州塔_compressed.jpg`）
@@ -120,7 +134,7 @@ python compress.py --max-w 1600 广州市/images
 对于已有 Wikimedia Commons 在线图片的景点：
 
 1. 下载原图到 `images/` 目录
-2. 运行 `python compress.py --update <城市>/images` 压缩并更新引用
+2. 运行 `python scripts/compress.py --update <城市>/images` 压缩并更新引用
 3. 保留 `> 图片来源：` 行（指向 Wikimedia Commons 页面，仅用于版权说明）
 
 ## 城市 README 排序规则
