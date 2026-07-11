@@ -24,6 +24,14 @@ Attraction files: `{市}-{区县}-{景点名}.md` under the city directory — e
 4. Add the attraction to the city directory's `README.md` index
 5. Update the progress table in the root `README.md`
 
+## README 同步规则
+
+对景点文件进行任何新增、删除、重命名操作后，必须同步更新相关 README 文件：
+
+1. **新增景点**：在对应城市目录的 `README.md` 中添加该景点的表格行，同时递增根目录 `README.md` 中的景点总数
+2. **删除景点**：从对应城市目录的 `README.md` 中移除该景点的表格行，同时递减根目录 `README.md` 中的景点总数
+3. **重命名景点**：同时更新对应城市目录 `README.md` 中的景点名称（显示文本）和文件链接，根目录 `README.md` 中的数量统计不变
+
 ## Key Conventions
 
 - All content is in Chinese (Simplified)
@@ -138,7 +146,7 @@ python compress.py --max-w 1600 广州市/images
 
 ```markdown
 ## 南山区
-| 景点名称 | 景点等级 | 景点类型 | 文件 |
+| 景点名称 | 景点等级 | 景点类型 | 景点详情 |
 |----------|----------|----------|------|
 | 欢乐谷 | 5A | 主题公园 | ... |
 | 世界之窗 | 4A | 主题公园 | ... |
