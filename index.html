@@ -559,6 +559,28 @@
 
           // 绿色编号圆点标记
           var placedLabels = [];
+          var placedCircleKeys = {};
+          var circleStagger = [
+            [0, 0],       // 第1个：精确位置
+            [24, 0],      // 第2个：右移
+            [0, -24],     // 第3个：上移
+            [-24, 0],     // 第4个：左移
+            [0, 24],      // 第5个：下移
+            [24, -24],    // 第6个：右上
+            [-24, 24],    // 第7个：左下
+            [24, 24],     // 第8个：右下
+            [-24, -24],   // 第9个：左上
+          ];
+
+          function getStaggeredLatLng(lat, lng) {
+            var pt = map.latLngToContainerPoint(L.latLng(lat, lng));
+            var key = Math.round(pt.x / 8) + ',' + Math.round(pt.y / 8);
+            var idx = placedCircleKeys[key] || 0;
+            placedCircleKeys[key] = idx + 1;
+            if (idx === 0) return L.latLng(lat, lng);
+            var s = circleStagger[idx % circleStagger.length];
+            return map.containerPointToLatLng(L.point(pt.x + s[0], pt.y + s[1]));
+          }
           var labelOffsets = [
             { mt: -30, ml: 16 },  // 右上
             { mt: -8,  ml: 16 },  // 右
@@ -598,8 +620,11 @@
             var na = nearby[k];
             var distanceText = na.distance < 1000 ? na.distance + 'm' : (na.distance / 1000).toFixed(1) + 'km';
 
+            // 对相近坐标做分散偏移，避免标记点重叠
+            var ll = getStaggeredLatLng(na.lat, na.lng);
+
             // 编号圆点
-            L.marker([na.lat, na.lng], {
+            L.marker([ll.lat, ll.lng], {
               icon: L.divIcon({
                 className: 'marker-nearby',
                 html: '<div style="background:#27ae60;color:#fff;width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600;box-shadow:0 2px 6px rgba(0,0,0,0.25);border:2px solid #fff;">' + (k + 1) + '</div>',
@@ -612,14 +637,14 @@
             );
 
             // 错开布局的名称标签
-            var point = map.latLngToContainerPoint(L.latLng(na.lat, na.lng));
-            var offset = findLabelOffset(na.name, point, placedLabels);
-            if (offset) {
-              L.marker([na.lat, na.lng], {
+            var labelPoint = map.latLngToContainerPoint(ll);
+            var labelOffset = findLabelOffset(na.name, labelPoint, placedLabels);
+            if (labelOffset) {
+              L.marker([ll.lat, ll.lng], {
                 icon: L.divIcon({
                   className: '',
                   html: '<div style="position:relative;width:1px;height:1px;overflow:visible;">' +
-                        '<div style="position:absolute;top:' + offset.mt + 'px;left:' + offset.ml + 'px;background:rgba(39,174,96,0.9);color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;white-space:nowrap;box-shadow:0 1px 4px rgba(0,0,0,0.2);">' + na.name + '</div>' +
+                        '<div style="position:absolute;top:' + labelOffset.mt + 'px;left:' + labelOffset.ml + 'px;background:rgba(39,174,96,0.9);color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;white-space:nowrap;box-shadow:0 1px 4px rgba(0,0,0,0.2);">' + na.name + '</div>' +
                         '</div>',
                   iconSize: [1, 1],
                   iconAnchor: [0, 0]
