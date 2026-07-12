@@ -25,6 +25,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Generate search paths
+        run: python scripts/generate_search_paths.py
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 

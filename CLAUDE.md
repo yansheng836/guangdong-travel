@@ -46,6 +46,24 @@ Attraction files: `{市}-{区县}-{景点名}.md` under the city directory — e
 python scripts/extract_coords.py
 ```
 
+## 搜索索引同步规则
+
+`index.html` 中的 Docsify 搜索 `paths` 数组必须包含所有景点文件的路径，否则搜索功能无法索引到新增景点。
+
+1. **新增景点**：新增景点文件后，必须重新生成搜索路径列表
+2. **删除景点**：删除景点文件后，必须重新生成搜索路径列表
+3. **重命名景点**：重命名景点文件后，必须重新生成搜索路径列表
+
+### 手动重新生成
+
+```bash
+python scripts/generate_search_paths.py
+```
+
+### 自动生成
+
+每次推送到 `main` 分支时，GitHub Actions 部署流程会自动运行此脚本，无需手动操作。
+
 ## Key Conventions
 
 - All content is in Chinese (Simplified)
