@@ -36,11 +36,45 @@ Attraction files: `{市}-{区县}-{景点名}.md` under the city directory — e
 
 `attractions-geo.json` 是 Leaflet 地图展示附近景点所需的坐标数据文件。
 
+### 坐标系说明
+
+- 所有景点坐标使用 **GCJ-02（火星坐标系）**，以匹配高德地图瓦片
+- 由 `scripts/geocode_update.py` 通过高德地理编码 API 获取，无需手动转换
+- 如需对比：WGS-84（国际标准）在广东地区偏移 GCJ-02 约 200-700m
+
+### 数据更新场景
+
 1. **修改地址或经纬度**：当景点文件的地址或经纬度信息发生变更时，必须重新生成 `attractions-geo.json`
 2. **新增景点**（含经纬度）：新增景点文件后，必须重新生成 `attractions-geo.json`
 3. **删除景点**：删除景点文件后，必须重新生成 `attractions-geo.json`
 
-重新生成命令：
+### 从地址重新获取坐标
+
+当新增景点或发现坐标不准确时，使用高德地理编码 API 批量获取：
+
+```bash
+# 设置环境变量（高德开放平台 Web 服务 API Key）
+# Linux/Mac:
+export AMAP_KEY='你的API Key'
+# Windows CMD:
+set AMAP_KEY=你的API Key
+# Windows PowerShell:
+$env:AMAP_KEY='你的API Key'
+
+# 全量更新所有城市
+python scripts/geocode_update.py
+
+# 只更新指定城市
+python scripts/geocode_update.py --city=广州市
+python scripts/geocode_update.py --city=深圳市
+
+# 跳过已处理的城市（配合全量使用）
+python scripts/geocode_update.py --skip=广州市,深圳市
+```
+
+> 注意：免费 API Key 每日调用上限 5000 次，项目 701 个景点可一天内完成全量更新。
+
+### 重新生成坐标数据文件
 
 ```bash
 python scripts/extract_coords.py
