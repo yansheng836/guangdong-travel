@@ -3,8 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <title>广东旅游景点</title>
+  <script>
+    window.addEventListener('load', function () {
+      var obs = new MutationObserver(function () {
+        var h1 = document.querySelector('.markdown-section h1');
+        if (h1) document.title = h1.textContent.trim() + ' - 广东旅游景点';
+      });
+      obs.observe(document.body, { childList: true, subtree: true });
+    });
+  </script>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="广东省旅游景点大全，收录21个城市300+景点">
+  <meta name="description" content="广东省旅游景点大全，收录21个城市700+景点">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
   <link rel="stylesheet" href="css/custom.css">
