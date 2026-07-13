@@ -19,6 +19,12 @@ __pycache__/
 
 # Misc
 *.log
+screen_uri.txt
+screenshot_check.png
+screen_check.png
+
+# Playwright MCP artifacts
+.playwright-mcp/
 
 # Images — 忽略原图，保留压缩后的图片 (_compressed.*)
 *.jpg

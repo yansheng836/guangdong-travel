@@ -80,11 +80,29 @@ python scripts/geocode_update.py
 python scripts/geocode_update.py --city=广州市
 python scripts/geocode_update.py --city=深圳市
 
+# 只更新指定景点（精确匹配景点名称）
+python scripts/geocode_update.py --name=花城广场
+python scripts/geocode_update.py --name=白云山
+
 # 跳过已处理的城市（配合全量使用）
 python scripts/geocode_update.py --skip=广州市,深圳市
 ```
 
 > 注意：免费 API Key 每日调用上限 5000 次，项目 701 个景点可一天内完成全量更新。
+
+### 脚本查询策略
+
+`geocode_update.py` 对每个景点依次尝试三种查询策略，择优选用：
+
+1. **景点名称**（如 `广州市白云山`）→ 大部分景点直接命中兴趣点（POI）级别
+2. **地址**（如 `广州市白云区广园中路`）→ 名称级别不理想时尝试
+3. **完整名称**（如 `广州市白云山风景名胜区`）→ 名称+地址都不够精确时的兜底策略，由景点名称和景点类型拼接而成
+
+优先选择级别为 `兴趣点` / `风景名胜区` / `景点` / `景区` / `公园` / `广场` / `博物馆` 等具体地点级别的结果。输出会显示命中策略（`src=名称/地址/完整名称`）和级别（`[兴趣点]` 等）。
+
+### 按景点名筛选的兼容模式
+
+如需处理重名景点（如"莲花山"在广州市和汕尾市均有），先用 `--name=景点名` 查看匹配数量，确认后再执行：
 
 ### 重新生成坐标数据文件
 
