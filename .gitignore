@@ -13,6 +13,10 @@ Desktop.ini
 # Node (if any tooling added later)
 node_modules/
 
+# Python
+__pycache__/
+*.pyc
+
 # Misc
 *.log
 
@@ -25,3 +29,19 @@ node_modules/
 !*_compressed.jpeg
 !*_compressed.png
 !*_compressed.webp
+# 研究中间产物
+*.html
+*_api.txt
+*_attractions.txt
+*_tourism*.txt
+*_t*.txt
+*_section*.txt
+*_parsed.txt
+*_baike*.txt
+*_baike*.html
+*_yhgwm.*
+*_qunar*.*
+*_qyer*.*
+*_bing*.*
+*_mafengwo*.*
+_download*.log

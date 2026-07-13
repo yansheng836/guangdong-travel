@@ -923,6 +923,47 @@ a:hover {
 }
 
 /* ============================================
+   地图容器样式
+   ============================================ */
+
+#attraction-map {
+  z-index: 1;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-md);
+}
+
+@media screen and (max-width: 768px) {
+  #attraction-map {
+    height: 280px !important;
+  }
+}
+
+/* 地图标记点 */
+.marker-current,
+.marker-nearby {
+  background: transparent !important;
+  border: none !important;
+}
+
+/* 地图标签图标 */
+.marker-nearby-label {
+  background: transparent !important;
+  border: none !important;
+  pointer-events: none !important;
+}
+.marker-nearby-label div {
+  pointer-events: auto;
+}
+
+/* 地图图例 */
+.map-legend {
+  font-family: var(--font-sans);
+}
+.map-legend div {
+  line-height: 1.6;
+}
+
+/* ============================================
    动画效果
    ============================================ */
 

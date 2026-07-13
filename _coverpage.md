@@ -4,7 +4,7 @@
 
 <div class="cover-stats">
   <span class="stat-badge">🏙️ 21 城市</span>
-  <span class="stat-badge">🏛️ 315+ 景点</span>
+  <span class="stat-badge">🏛️ 700+ 景点</span>
   <span class="stat-badge">📸 图文详解</span>
 </div>
 

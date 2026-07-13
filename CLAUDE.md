@@ -24,6 +24,92 @@ Attraction files: `{市}-{区县}-{景点名}.md` under the city directory — e
 4. Add the attraction to the city directory's `README.md` index
 5. Update the progress table in the root `README.md`
 
+## README 同步规则
+
+对景点文件进行任何新增、删除、重命名操作后，必须同步更新相关 README 文件：
+
+1. **新增景点**：在对应城市目录的 `README.md` 中添加该景点的表格行，同时递增根目录 `README.md` 中的景点总数
+2. **删除景点**：从对应城市目录的 `README.md` 中移除该景点的表格行，同时递减根目录 `README.md` 中的景点总数
+3. **重命名景点**：同时更新对应城市目录 `README.md` 中的景点名称（显示文本）和文件链接，根目录 `README.md` 中的数量统计不变
+
+### 景点链接格式
+
+城市 `README.md` 中景点详情的链接**必须包含目录前缀**，格式为 `{城市}/{城市}-{区县}-{景点名}.md`：
+
+```markdown
+<!-- ✅ 正确：包含目录前缀 -->
+[广州塔](广州市/广州市-海珠区-广州塔.md)
+
+<!-- ❌ 错误：缺少目录前缀（Docsify 作为 SPA，链接从站点根目录解析，不加目录会导致 404） -->
+[广州塔](广州市-海珠区-广州塔.md)
+```
+
+## 地图坐标数据同步规则
+
+`attractions-geo.json` 是 Leaflet 地图展示附近景点所需的坐标数据文件。
+
+### 坐标系说明
+
+- 所有景点坐标使用 **GCJ-02（火星坐标系）**，以匹配高德地图瓦片
+- 由 `scripts/geocode_update.py` 通过高德地理编码 API 获取，无需手动转换
+- 如需对比：WGS-84（国际标准）在广东地区偏移 GCJ-02 约 200-700m
+
+### 数据更新场景
+
+1. **修改地址或经纬度**：当景点文件的地址或经纬度信息发生变更时，必须重新生成 `attractions-geo.json`
+2. **新增景点**（含经纬度）：新增景点文件后，必须重新生成 `attractions-geo.json`
+3. **删除景点**：删除景点文件后，必须重新生成 `attractions-geo.json`
+
+### 从地址重新获取坐标
+
+当新增景点或发现坐标不准确时，使用高德地理编码 API 批量获取：
+
+```bash
+# 设置环境变量（高德开放平台 Web 服务 API Key）
+# Linux/Mac:
+export AMAP_KEY='你的API Key'
+# Windows CMD:
+set AMAP_KEY=你的API Key
+# Windows PowerShell:
+$env:AMAP_KEY='你的API Key'
+
+# 全量更新所有城市
+python scripts/geocode_update.py
+
+# 只更新指定城市
+python scripts/geocode_update.py --city=广州市
+python scripts/geocode_update.py --city=深圳市
+
+# 跳过已处理的城市（配合全量使用）
+python scripts/geocode_update.py --skip=广州市,深圳市
+```
+
+> 注意：免费 API Key 每日调用上限 5000 次，项目 701 个景点可一天内完成全量更新。
+
+### 重新生成坐标数据文件
+
+```bash
+python scripts/extract_coords.py
+```
+
+## 搜索索引同步规则
+
+`index.html` 中的 Docsify 搜索 `paths` 数组必须包含所有景点文件的路径，否则搜索功能无法索引到新增景点。
+
+1. **新增景点**：新增景点文件后，必须重新生成搜索路径列表
+2. **删除景点**：删除景点文件后，必须重新生成搜索路径列表
+3. **重命名景点**：重命名景点文件后，必须重新生成搜索路径列表
+
+### 手动重新生成
+
+```bash
+python scripts/generate_search_paths.py
+```
+
+### 自动生成
+
+每次推送到 `main` 分支时，GitHub Actions 部署流程会自动运行此脚本，无需手动操作。
+
 ## Key Conventions
 
 - All content is in Chinese (Simplified)
@@ -68,23 +154,23 @@ Attraction files: `{市}-{区县}-{景点名}.md` under the city directory — e
 
 ### 图片压缩
 
-所有本地图片必须经过压缩，使用项目根目录的 `compress.py` 脚本：
+所有本地图片必须经过压缩，使用项目根目录的 `scripts/compress.py` 脚本：
 
 ```bash
 # 压缩指定城市 images/ 目录下的所有图片
-python compress.py 广州市/images
+python scripts/compress.py 广州市/images
 
 # 压缩后自动更新景点文件引用（使用 _compressed.jpg）
-python compress.py --update 广州市/images
+python scripts/compress.py --update 广州市/images
 
 # 预览模式，显示将执行的操作但不实际执行
-python compress.py --dry-run 广州市/images
+python scripts/compress.py --dry-run 广州市/images
 
 # 调整压缩质量（1-100，默认 75）
-python compress.py --quality 85 广州市/images
+python scripts/compress.py --quality 85 广州市/images
 
 # 调整最大宽度（默认 1920）
-python compress.py --max-w 1600 广州市/images
+python scripts/compress.py --max-w 1600 广州市/images
 ```
 
 - 压缩后保存为 `原文件名_compressed.jpg`（如 `广州市-海珠区-广州塔_compressed.jpg`）
@@ -112,7 +198,7 @@ python compress.py --max-w 1600 广州市/images
 对于已有 Wikimedia Commons 在线图片的景点：
 
 1. 下载原图到 `images/` 目录
-2. 运行 `python compress.py --update <城市>/images` 压缩并更新引用
+2. 运行 `python scripts/compress.py --update <城市>/images` 压缩并更新引用
 3. 保留 `> 图片来源：` 行（指向 Wikimedia Commons 页面，仅用于版权说明）
 
 ## 城市 README 排序规则
@@ -138,7 +224,7 @@ python compress.py --max-w 1600 广州市/images
 
 ```markdown
 ## 南山区
-| 景点名称 | 景点等级 | 景点类型 | 文件 |
+| 景点名称 | 景点等级 | 景点类型 | 景点详情 |
 |----------|----------|----------|------|
 | 欢乐谷 | 5A | 主题公园 | ... |
 | 世界之窗 | 4A | 主题公园 | ... |

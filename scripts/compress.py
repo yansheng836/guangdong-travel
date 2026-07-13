@@ -2,12 +2,12 @@
 批量压缩项目图片，可选自动更新景点文件引用。
 
 用法:
-    python compress.py                        # 默认只压缩图片
-    python compress.py --update               # 压缩 + 更新景点文件引用
-    python compress.py 广州市/ 深圳市/         # 指定目录
-    python compress.py --quality 85            # 自定义质量
-    python compress.py --max-w 1600            # 自定义最大宽度
-    python compress.py --dry-run               # 预览，不写入
+    python scripts/compress.py                        # 默认只压缩图片
+    python scripts/compress.py --update               # 压缩 + 更新景点文件引用
+    python scripts/compress.py 广州市/ 深圳市/         # 指定目录
+    python scripts/compress.py --quality 85            # 自定义质量
+    python scripts/compress.py --max-w 1600            # 自定义最大宽度
+    python scripts/compress.py --dry-run               # 预览，不写入
 
 参数:
     --update          同时扫描景点 .md 文件，自动替换图片引用链接
@@ -28,6 +28,19 @@ SUPPORTED_EXTS = {".jpg", ".jpeg", ".png", ".webp"}
 DEFAULT_QUALITY = 75
 DEFAULT_MAX_WIDTH = 1920
 COMPRESSION_SUFFIX = "_compressed"
+PROJECT_ROOT = Path(".")
+
+
+# ── 路径工具 ──────────────────────────────────────────
+
+def _compressed_path(filepath: Path) -> Path:
+    """根据原图路径计算压缩后的目标路径。"""
+    out = filepath.with_stem(filepath.stem + COMPRESSION_SUFFIX)
+    if out.suffix.lower() in (".jpg", ".jpeg"):
+        out = out.with_suffix(".jpg")
+    elif out.suffix.lower() == ".webp":
+        out = out.with_suffix(".webp")
+    return out
 
 
 # ── 核心函数 ──────────────────────────────────────────
@@ -55,8 +68,7 @@ def compress_image(filepath: Path, quality: int, max_width: int, dry_run: bool =
         width, height = img.size
 
     out_format = "JPEG" if original_format and original_format.upper() in ("JPEG", "JPG") else "JPEG"
-    out_ext = ".jpg" if out_format == "JPEG" else ".webp"
-    out_path = filepath.with_stem(filepath.stem + COMPRESSION_SUFFIX).with_suffix(out_ext)
+    out_path = _compressed_path(filepath)
 
     save_kwargs: dict = {"optimize": True} if out_format == "JPEG" else {}
     save_kwargs["quality"] = quality
@@ -137,12 +149,7 @@ def collect_images(dirs: list[Path]) -> list[Path]:
         if COMPRESSION_SUFFIX in f.stem:
             continue
         # 跳过已有对应压缩文件的
-        out = f.with_stem(f.stem + COMPRESSION_SUFFIX)
-        if out.suffix.lower() in (".jpg", ".jpeg"):
-            out = out.with_suffix(".jpg")
-        elif out.suffix.lower() == ".webp":
-            out = out.with_suffix(".webp")
-        if out.exists():
+        if _compressed_path(f).exists():
             continue
         result.append(f)
     return result
@@ -163,7 +170,7 @@ def main():
         description="批量压缩项目图片，可选自动更新景点文件引用。",
         epilog="默认只压缩图片；加 --update 才会更新引用链接。",
     )
-    parser.add_argument("dirs", nargs="*", default=[Path(".")], type=Path, help="扫描目录 (默认当前目录)")
+    parser.add_argument("dirs", nargs="*", default=[PROJECT_ROOT], type=Path, help="扫描目录 (默认当前目录)")
     parser.add_argument("--update", action="store_true", help="压缩的同时更新景点 .md 文件中的图片引用")
     parser.add_argument("--quality", type=int, default=DEFAULT_QUALITY, help=f"JPEG 质量 1-100 (默认 {DEFAULT_QUALITY})")
     parser.add_argument("--max-w", type=int, default=DEFAULT_MAX_WIDTH, help=f"最大宽度 px (默认 {DEFAULT_MAX_WIDTH})")
@@ -205,7 +212,7 @@ def main():
         reduction = result["reduction"]
 
         print(f"  [{_size_str(result['original_size'])} -> {_size_str(result['compressed_size'])}] "
-              f"{img_file.relative_to(Path('.'))} ({reduction:.1f}%)")
+              f"{img_file.relative_to(PROJECT_ROOT)} ({reduction:.1f}%)")
 
         # 3. 更新景点文件引用
         if args.update:
@@ -217,7 +224,7 @@ def main():
                 new_rel = Path(os.path.relpath(result["output"], md_dir))
                 if update_md_links(md, ref_path, str(new_rel)):
                     updated_files += 1
-                    print(f"    ↳ {md.relative_to(Path('.'))}: {ref_path} -> {new_rel}")
+                    print(f"    ↳ {md.relative_to(PROJECT_ROOT)}: {ref_path} -> {new_rel}")
 
     print("=" * 70)
     total_reduction = (1 - total_compressed / total_original) * 100 if total_original > 0 else 0
