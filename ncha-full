@@ -1,0 +1,639 @@
+- generic [active] [ref=f11e1] [box=0,0,1031,1709]:
+  - generic [ref=f11e2] [box=0,0,1031,1446]:
+    - generic [ref=f11e4] [box=15,0,1002,34]:
+      - generic [ref=f11e5] [box=15,0,210,34]: 2026年7月14日 星期二
+      - table [ref=f11e7] [box=707,0,300,33]:
+        - rowgroup [ref=f11e8] [box=707,0,300,33]:
+          - row [ref=f11e9] [box=707,0,300,33]:
+            - cell [ref=f11e10] [box=707,0,300,33]:
+              - link "无障碍阅读" [ref=f11e11] [cursor=pointer] [box=842,10,60,13]:
+                - /url: javascript:;
+              - text: "|"
+              - link "简体版" [ref=f11e12] [cursor=pointer] [box=918,10,36,13]:
+                - /url: javascript:zh_tran('n')
+              - text: "|"
+              - link "繁体版" [ref=f11e13] [cursor=pointer] [box=971,10,36,13]:
+                - /url: javascript:zh_tran('t')
+    - generic [ref=f11e15] [box=15,35,1002,113]:
+      - link [ref=f11e18] [cursor=pointer] [box=1039,555,70,16]:
+        - /url: /col/col2762/index.html
+      - table [ref=f11e19] [box=15,35,1002,113]:
+        - rowgroup [ref=f11e20] [box=15,35,1002,113]:
+          - row [ref=f11e21] [box=15,35,1002,113]:
+            - cell [ref=f11e22] [box=15,35,501,113]
+            - cell [ref=f11e24] [box=516,35,501,113]:
+              - table [ref=f11e26] [box=633,74,384,35]:
+                - rowgroup [ref=f11e27] [box=633,74,384,35]:
+                  - row [ref=f11e28] [box=633,74,384,35]:
+                    - cell [ref=f11e29] [box=633,74,242,35]:
+                      - textbox [ref=f11e30] [box=637,76,234,30]
+                    - cell [ref=f11e31] [box=875,74,67,35]:
+                      - button "Submit" [ref=f11e32] [cursor=pointer] [box=875,74,67,35]
+                    - cell [ref=f11e33] [box=942,74,5,35]
+                    - cell [ref=f11e34] [box=947,74,70,35]:
+                      - link "高级搜索" [ref=f11e35] [cursor=pointer] [box=947,74,70,35]:
+                        - /url: /jsearch/search.do?pagemode=advsearch
+    - generic [ref=f11e37] [box=15,148,1002,41]:
+      - list [box=55,148,962,0]:
+        - listitem [ref=f11e38] [box=55,148,70,42]:
+          - link "首页" [ref=f11e39] [cursor=pointer] [box=74,157,32,21]:
+            - /url: /
+        - listitem [ref=f11e40] [box=125,148,8,41]: "|"
+        - listitem [ref=f11e41] [box=133,148,95,42]:
+          - link "机构概况" [ref=f11e42] [cursor=pointer] [box=148,157,64,21]:
+            - /url: /col/col1019/index.html
+        - listitem [ref=f11e43] [box=228,148,8,41]: "|"
+        - listitem [ref=f11e44] [box=236,148,95,42]:
+          - link "新闻资讯" [ref=f11e45] [cursor=pointer] [box=251,157,64,21]:
+            - /url: /col/col722/index.html
+        - listitem [ref=f11e46] [box=331,148,8,41]: "|"
+        - listitem [ref=f11e47] [box=339,148,95,42]:
+          - link "政务公开" [ref=f11e48] [cursor=pointer] [box=354,157,64,21]:
+            - /url: /col/col2398/index.html
+        - listitem [ref=f11e49] [box=434,148,8,41]: "|"
+        - listitem [ref=f11e50] [box=442,148,95,42]:
+          - link "办事服务" [ref=f11e51] [cursor=pointer] [box=457,157,64,21]:
+            - /url: /col/col2292/index.html
+        - listitem [ref=f11e52] [box=537,148,8,41]: "|"
+        - listitem [ref=f11e53] [box=545,148,95,42]:
+          - link "互动交流" [ref=f11e54] [cursor=pointer] [box=560,157,64,21]:
+            - /url: /col/col1066/index.html
+        - listitem [ref=f11e55] [box=640,148,8,41]: "|"
+        - listitem [ref=f11e56] [box=648,148,95,42]:
+          - link "专题" [ref=f11e57] [cursor=pointer] [box=679,157,32,21]:
+            - /url: /col/col1049/index.html
+    - link [ref=f11e59] [cursor=pointer] [box=16,303,1000,16]:
+      - /url: /col/col2376/index.html
+    - generic [ref=f11e61] [box=15,317,1002,1089]:
+      - table [ref=f11e64] [box=15,327,1002,342]:
+        - rowgroup [ref=f11e65] [box=15,327,1002,342]:
+          - row [ref=f11e595] [box=15,327,1002,342]:
+            - cell [ref=f11e596] [box=15,327,452,342]:
+              - generic [ref=f11e68] [box=15,327,452,342]:
+                - list [ref=f11e70] [box=380,648,80,8]:
+                  - listitem [ref=f11e71] [cursor=pointer] [box=380,648,8,8]
+                  - listitem [ref=f11e72] [cursor=pointer] [box=396,648,8,8]
+                  - listitem [ref=f11e73] [cursor=pointer] [box=412,648,8,8]
+                  - listitem [ref=f11e74] [cursor=pointer] [box=428,648,8,8]
+                  - listitem [ref=f11e75] [cursor=pointer] [box=444,648,8,8]
+                - list [ref=f11e77] [box=15,328,450,340]:
+                  - listitem [ref=f11e597] [box=15,328,450,340]:
+                    - link [ref=f11e598] [cursor=pointer] [box=15,328,450,340]:
+                      - /url: http://www.ncha.gov.cn/art/2026/7/1/art_2664_203510.html
+                      - paragraph [ref=f11e600] [box=15,641,350,27]: 庆祝中国共产党成立105周年大会在京隆重举行
+            - cell [ref=f11e83] [box=466,327,10,342]
+            - cell [ref=f11e84] [box=476,327,540,342]:
+              - generic [ref=f11e85] [box=481,327,530,82]:
+                - table [ref=f11e86] [box=481,327,530,36]:
+                  - rowgroup [ref=f11e87] [box=481,327,530,36]:
+                    - row [ref=f11e88] [box=481,327,530,36]:
+                      - cell [ref=f11e89] [box=481,327,530,36]:
+                        - link "庆祝中国共产党成立105周年大会在京隆重举行" [ref=f11e90] [cursor=pointer] [box=548,336,398,18]:
+                          - /url: /art/2026/7/1/art_2664_203510.html
+                - paragraph [ref=f11e92] [box=481,363,530,46]:
+                  - text: 庆祝中国共产党成立105周年大会在京隆重举行习近平发表重要讲话强调，中国共产党之所以能够在105年奋斗中不断铸就辉煌，历史和人民之所以选择中...
+                  - link "[详细]" [ref=f11e93] [cursor=pointer] [box=808,390,37,12]:
+                    - /url: /art/2026/7/1/art_2664_203510.html
+              - generic [ref=f11e94] [box=481,419,530,218]:
+                - table [ref=f11e95] [box=481,419,530,31]:
+                  - rowgroup [ref=f11e96] [box=481,419,530,30]:
+                    - row [ref=f11e97] [box=481,419,530,30]:
+                      - cell [ref=f11e98] [box=481,419,4,30]
+                      - cell [ref=f11e99] [cursor=pointer] [box=486,419,57,30]:
+                        - link "时政要闻" [ref=f11e100] [box=490,429,48,12]:
+                          - /url: /col/col2664/index.html
+                      - cell [ref=f11e101] [cursor=pointer] [box=542,419,69,30]:
+                        - link "国务院要闻" [ref=f11e102] [box=547,429,60,12]:
+                          - /url: /col/col1699/index.html
+                      - cell [ref=f11e103] [cursor=pointer] [box=611,419,57,30]:
+                        - link "文物新闻" [ref=f11e104] [box=615,429,48,12]:
+                          - /url: /col/col722/index.html
+                      - cell [ref=f11e105] [cursor=pointer] [box=668,419,57,30]:
+                        - link "党建工作" [ref=f11e106] [box=672,429,48,12]:
+                          - /url: /col/col1879/index.html
+                      - cell [ref=f11e107] [cursor=pointer] [box=724,419,57,30]:
+                        - link "政策解读" [ref=f11e108] [box=729,429,48,12]:
+                          - /url: /col/col1961/index.html
+                      - cell [ref=f11e109] [cursor=pointer] [box=781,419,57,30]:
+                        - link "派驻监督" [ref=f11e110] [box=785,429,48,12]:
+                          - /url: /col/col2027/index.html
+                      - cell [ref=f11e111] [cursor=pointer] [box=837,419,57,30]:
+                        - link "工作资讯" [ref=f11e112] [box=842,429,48,12]:
+                          - /url: /col/col1025/index.html
+                      - cell [ref=f11e113] [cursor=pointer] [box=894,419,57,30]:
+                        - link "行业信息" [ref=f11e114] [box=898,429,48,12]:
+                          - /url: /col/col723/index.html
+                      - cell [ref=f11e115] [cursor=pointer] [box=951,419,57,30]:
+                        - link "媒体关注" [ref=f11e116] [box=955,429,48,12]:
+                          - /url: /col/col1027/index.html
+                      - cell [ref=f11e117] [box=1007,419,4,30]
+                - generic [ref=f11e118] [box=481,450,530,187]:
+                  - table [ref=f11e119] [box=487,455,519,26]:
+                    - rowgroup [ref=f11e120] [box=487,455,519,26]:
+                      - row [ref=f11e121] [box=487,455,519,26]:
+                        - cell [ref=f11e122] [box=487,455,10,26]
+                        - cell [ref=f11e124] [box=497,455,459,26]:
+                          - link "中共中央办公厅、国务院办公厅印发《关于全力做好防汛抗旱工作的通知》" [ref=f11e125] [cursor=pointer] [box=497,462,396,12]:
+                            - /url: /art/2026/7/11/art_2664_203695.html
+                        - cell "[07-11]" [ref=f11e126] [box=956,455,50,26]
+                  - table [ref=f11e127] [box=487,481,519,26]:
+                    - rowgroup [ref=f11e128] [box=487,481,519,26]:
+                      - row [ref=f11e129] [box=487,481,519,26]:
+                        - cell [ref=f11e130] [box=487,481,10,26]
+                        - cell [ref=f11e132] [box=497,481,459,26]:
+                          - link "习近平出席国家科学技术奖励大会两院院士大会中国科协第十一次全国代表大会..." [ref=f11e133] [cursor=pointer] [box=497,488,439,12]:
+                            - /url: /art/2026/7/9/art_2664_203663.html
+                        - cell "[07-09]" [ref=f11e134] [box=956,481,50,26]
+                  - table [ref=f11e135] [box=487,507,519,26]:
+                    - rowgroup [ref=f11e136] [box=487,507,519,26]:
+                      - row [ref=f11e137] [box=487,507,519,26]:
+                        - cell [ref=f11e138] [box=487,507,10,26]
+                        - cell [ref=f11e140] [box=497,507,459,26]:
+                          - link "习近平对防汛救灾工作作出重要指示强调 要全力组织抢险救援、伤员救治、群..." [ref=f11e141] [cursor=pointer] [box=497,514,434,12]:
+                            - /url: /art/2026/7/9/art_2664_203662.html
+                        - cell "[07-09]" [ref=f11e142] [box=956,507,50,26]
+                  - table [ref=f11e143] [box=487,533,519,26]:
+                    - rowgroup [ref=f11e144] [box=487,533,519,26]:
+                      - row [ref=f11e145] [box=487,533,519,26]:
+                        - cell [ref=f11e146] [box=487,533,10,26]
+                        - cell [ref=f11e148] [box=497,533,459,26]:
+                          - link "集聚人才合力 共赴壮阔前程——习近平总书记在庆祝中国共产党成立一百零五..." [ref=f11e149] [cursor=pointer] [box=497,540,434,12]:
+                            - /url: /art/2026/7/9/art_2664_203661.html
+                        - cell "[07-09]" [ref=f11e150] [box=956,533,50,26]
+                  - table [ref=f11e151] [box=487,559,519,26]:
+                    - rowgroup [ref=f11e152] [box=487,559,519,26]:
+                      - row [ref=f11e153] [box=487,559,519,26]:
+                        - cell [ref=f11e154] [box=487,559,10,26]
+                        - cell [ref=f11e156] [box=497,559,459,26]:
+                          - link "纪念全民族抗战爆发89周年仪式在京举行 尹力主持" [ref=f11e157] [cursor=pointer] [box=497,566,271,12]:
+                            - /url: /art/2026/7/9/art_2664_203660.html
+                        - cell "[07-09]" [ref=f11e158] [box=956,559,50,26]
+                  - table [ref=f11e159] [box=487,585,519,26]:
+                    - rowgroup [ref=f11e160] [box=487,585,519,26]:
+                      - row [ref=f11e161] [box=487,585,519,26]:
+                        - cell [ref=f11e162] [box=487,585,10,26]
+                        - cell [ref=f11e164] [box=497,585,459,26]:
+                          - link "中央宣传部新命名一批全国爱国主义教育示范基地" [ref=f11e165] [cursor=pointer] [box=497,592,264,12]:
+                            - /url: /art/2026/7/9/art_2664_203659.html
+                        - cell "[07-09]" [ref=f11e166] [box=956,585,50,26]
+                  - table [ref=f11e167] [box=487,611,519,26]:
+                    - rowgroup [ref=f11e168] [box=487,611,519,26]:
+                      - row [ref=f11e169] [box=487,611,519,26]:
+                        - cell [ref=f11e170] [box=487,611,10,26]
+                        - cell [ref=f11e172] [box=497,611,459,26]:
+                          - link "《习近平关于基层工作方法的重要论述学习读本》出版发行" [ref=f11e173] [cursor=pointer] [box=497,618,312,12]:
+                            - /url: /art/2026/7/9/art_2664_203658.html
+                        - cell "[07-09]" [ref=f11e174] [box=956,611,50,26]
+      - generic [ref=f11e175] [box=15,668,766,727]:
+        - table [ref=f11e176] [box=15,668,755,15]:
+          - rowgroup [ref=f11e177] [box=15,668,755,15]:
+            - row [ref=f11e178] [box=15,668,755,15]:
+              - cell [ref=f11e179] [box=15,668,755,15]
+        - table [ref=f11e180] [box=15,683,755,15]:
+          - rowgroup [ref=f11e181] [box=15,683,755,15]:
+            - row [ref=f11e182] [box=15,683,755,15]:
+              - cell [ref=f11e183] [box=15,683,755,15]
+        - table [ref=f11e184] [box=15,698,755,490]:
+          - rowgroup [ref=f11e185] [box=15,698,755,490]:
+            - row [ref=f11e186] [box=15,698,755,490]:
+              - cell "通知公告 国家文物局关于印发《革命文物保护工程技术导则（试行）》的通知 [ 07-12 ] 国家文物局关于组织开展第九批国家文物局重点科研基地申报工作的通知 [ 07-06 ] 国家文物局关于印发《国有文物资源数据管理办法》的通知 [ 07-06 ] 国家文物局政府网站2026年第二季度抽查情况报告 [ 06-30 ] 国家文物局政务新媒体2026年第二季度抽查情况报告 [ 06-30 ] 国家文物局公布庆祝中国共产党成立105周年主题陈列展览推介名单 [ 06-30 ] 国家文物局办公室关于公示《馆藏油画保护术语》等4项拟立项行业标准项目的通知 [ 06-24 ] 国家文物局 中央网信办关于公布2026年度中华文物新媒体传播精品推介项目名单的通知 [ 06-13 ] 国家文物局关于加强文物防灾减灾救灾工作的通知 [ 06-02 ] 国家文物局2026年度公开遴选公务员拟任职人员公示公告 [ 06-01 ] 国家文物局2026年度拟录用公务员公示公告 [ 06-01 ] 2026年度“博物馆里读中国——弘扬中华优秀传统文化、培育社会主义核心价值观”主题展览征集推介活动初评结果公示 [ 05-27 ] 国家文物局办公室关于组织赴突尼斯布匿罗马时期遗址出土文物研修班的通知 [ 05-13 ] “文物安全守护人”入围终评名单公示 [ 05-13 ] 国家文物局办公室关于组织赴意大利文物预防性保护研修班的通知 [ 05-08 ] 国家文物局办公室关于组织赴西班牙文物数字资源管理与利用研修班的通知 [ 05-08 ]" [ref=f11e187] [box=15,698,370,490]:
+                - table [ref=f11e188] [box=15,698,369,37]:
+                  - rowgroup [ref=f11e189] [box=15,698,369,37]:
+                    - row [ref=f11e190] [box=15,698,369,37]:
+                      - cell [ref=f11e191] [box=15,698,280,37]:
+                        - link "通知公告" [ref=f11e192] [cursor=pointer] [box=25,706,64,21]:
+                          - /url: /col/col2237/index.html?id=0
+                      - cell [ref=f11e193] [box=295,698,89,37]:
+                        - link [ref=f11e195] [cursor=pointer] [box=362,713,12,12]:
+                          - /url: /col/col2237/index.html?id=0
+                - generic [ref=f11e197] [box=15,735,370,5]:
+                  - list [box=15,740,370,0]:
+                    - listitem [box=15,740,370,0]:
+                      - link "国家文物局关于印发《革命文物保护工程技术导则（试行）》的通知" [ref=f11e198] [cursor=pointer] [box=20,740,280,28]:
+                        - /url: /art/2026/7/12/art_2318_48380.html
+                      - generic [ref=f11e199] [box=335,740,50,22]:
+                        - generic [ref=f11e200] [box=335,740,6,22]: "["
+                        - generic [ref=f11e201] [box=341,740,36,22]: 07-12
+                        - generic [ref=f11e202] [box=377,740,6,22]: "]"
+                    - listitem [box=15,740,370,0]:
+                      - link "国家文物局关于组织开展第九批国家文物局重点科研基地申报工作的通知" [ref=f11e203] [cursor=pointer] [box=20,768,280,28]:
+                        - /url: /art/2026/7/6/art_2318_48379.html
+                      - generic [ref=f11e204] [box=335,768,50,22]:
+                        - generic [ref=f11e205] [box=335,768,6,22]: "["
+                        - generic [ref=f11e206] [box=341,768,36,22]: 07-06
+                        - generic [ref=f11e207] [box=377,768,6,22]: "]"
+                    - listitem [box=15,740,370,0]:
+                      - link "国家文物局关于印发《国有文物资源数据管理办法》的通知" [ref=f11e208] [cursor=pointer] [box=20,796,280,28]:
+                        - /url: /art/2026/7/6/art_2318_48378.html
+                      - generic [ref=f11e209] [box=335,796,50,22]:
+                        - generic [ref=f11e210] [box=335,796,6,22]: "["
+                        - generic [ref=f11e211] [box=341,796,36,22]: 07-06
+                        - generic [ref=f11e212] [box=377,796,6,22]: "]"
+                    - listitem [box=15,740,370,0]:
+                      - link "国家文物局政府网站2026年第二季度抽查情况报告" [ref=f11e213] [cursor=pointer] [box=20,824,280,28]:
+                        - /url: /art/2026/6/30/art_2318_48377.html
+                      - generic [ref=f11e214] [box=335,824,50,22]:
+                        - generic [ref=f11e215] [box=335,824,6,22]: "["
+                        - generic [ref=f11e216] [box=341,824,36,22]: 06-30
+                        - generic [ref=f11e217] [box=377,824,6,22]: "]"
+                    - listitem [box=15,740,370,0]:
+                      - link "国家文物局政务新媒体2026年第二季度抽查情况报告" [ref=f11e218] [cursor=pointer] [box=20,852,280,28]:
+                        - /url: /art/2026/6/30/art_2318_48376.html
+                      - generic [ref=f11e219] [box=335,852,50,22]:
+                        - generic [ref=f11e220] [box=335,852,6,22]: "["
+                        - generic [ref=f11e221] [box=341,852,36,22]: 06-30
+                        - generic [ref=f11e222] [box=377,852,6,22]: "]"
+                    - listitem [box=15,740,370,0]:
+                      - link "国家文物局公布庆祝中国共产党成立105周年主题陈列展览推介名单" [ref=f11e223] [cursor=pointer] [box=20,880,280,28]:
+                        - /url: /art/2026/6/30/art_2318_48364.html
+                      - generic [ref=f11e224] [box=335,880,50,22]:
+                        - generic [ref=f11e225] [box=335,880,6,22]: "["
+                        - generic [ref=f11e226] [box=341,880,36,22]: 06-30
+                        - generic [ref=f11e227] [box=377,880,6,22]: "]"
+                    - listitem [box=15,740,370,0]:
+                      - link "国家文物局办公室关于公示《馆藏油画保护术语》等4项拟立项行业标准项目的通知" [ref=f11e228] [cursor=pointer] [box=20,908,280,28]:
+                        - /url: /art/2026/6/24/art_2318_48356.html
+                      - generic [ref=f11e229] [box=335,908,50,22]:
+                        - generic [ref=f11e230] [box=335,908,6,22]: "["
+                        - generic [ref=f11e231] [box=341,908,36,22]: 06-24
+                        - generic [ref=f11e232] [box=377,908,6,22]: "]"
+                    - listitem [box=15,740,370,0]:
+                      - link "国家文物局 中央网信办关于公布2026年度中华文物新媒体传播精品推介项目名单的通知" [ref=f11e233] [cursor=pointer] [box=20,936,280,28]:
+                        - /url: /art/2026/6/13/art_2318_48340.html
+                      - generic [ref=f11e234] [box=335,936,50,22]:
+                        - generic [ref=f11e235] [box=335,936,6,22]: "["
+                        - generic [ref=f11e236] [box=341,936,36,22]: 06-13
+                        - generic [ref=f11e237] [box=377,936,6,22]: "]"
+                    - listitem [box=15,740,370,0]:
+                      - link "国家文物局关于加强文物防灾减灾救灾工作的通知" [ref=f11e238] [cursor=pointer] [box=20,964,280,28]:
+                        - /url: /art/2026/6/2/art_2318_48267.html
+                      - generic [ref=f11e239] [box=335,964,50,22]:
+                        - generic [ref=f11e240] [box=335,964,6,22]: "["
+                        - generic [ref=f11e241] [box=341,964,36,22]: 06-02
+                        - generic [ref=f11e242] [box=377,964,6,22]: "]"
+                    - listitem [box=15,740,370,0]:
+                      - link "国家文物局2026年度公开遴选公务员拟任职人员公示公告" [ref=f11e243] [cursor=pointer] [box=20,992,280,28]:
+                        - /url: /art/2026/6/1/art_2318_48266.html
+                      - generic [ref=f11e244] [box=335,992,50,22]:
+                        - generic [ref=f11e245] [box=335,992,6,22]: "["
+                        - generic [ref=f11e246] [box=341,992,36,22]: 06-01
+                        - generic [ref=f11e247] [box=377,992,6,22]: "]"
+                    - listitem [box=15,740,370,0]:
+                      - link "国家文物局2026年度拟录用公务员公示公告" [ref=f11e248] [cursor=pointer] [box=20,1020,280,28]:
+                        - /url: /art/2026/6/1/art_2318_48265.html
+                      - generic [ref=f11e249] [box=335,1020,50,22]:
+                        - generic [ref=f11e250] [box=335,1020,6,22]: "["
+                        - generic [ref=f11e251] [box=341,1020,36,22]: 06-01
+                        - generic [ref=f11e252] [box=377,1020,6,22]: "]"
+                    - listitem [box=15,740,370,0]:
+                      - link "2026年度“博物馆里读中国——弘扬中华优秀传统文化、培育社会主义核心价值观”主题展览征集推介活动初评结果公示" [ref=f11e253] [cursor=pointer] [box=20,1048,280,28]:
+                        - /url: /art/2026/5/27/art_2318_48264.html
+                      - generic [ref=f11e254] [box=335,1048,50,22]:
+                        - generic [ref=f11e255] [box=335,1048,6,22]: "["
+                        - generic [ref=f11e256] [box=341,1048,36,22]: 05-27
+                        - generic [ref=f11e257] [box=377,1048,6,22]: "]"
+                    - listitem [box=15,740,370,0]:
+                      - link "国家文物局办公室关于组织赴突尼斯布匿罗马时期遗址出土文物研修班的通知" [ref=f11e258] [cursor=pointer] [box=20,1076,280,28]:
+                        - /url: /art/2026/5/13/art_2318_48249.html
+                      - generic [ref=f11e259] [box=335,1076,50,22]:
+                        - generic [ref=f11e260] [box=335,1076,6,22]: "["
+                        - generic [ref=f11e261] [box=341,1076,36,22]: 05-13
+                        - generic [ref=f11e262] [box=377,1076,6,22]: "]"
+                    - listitem [box=15,740,370,0]:
+                      - link "“文物安全守护人”入围终评名单公示" [ref=f11e263] [cursor=pointer] [box=20,1104,280,28]:
+                        - /url: /art/2026/5/13/art_2318_48248.html
+                      - generic [ref=f11e264] [box=335,1104,50,22]:
+                        - generic [ref=f11e265] [box=335,1104,6,22]: "["
+                        - generic [ref=f11e266] [box=341,1104,36,22]: 05-13
+                        - generic [ref=f11e267] [box=377,1104,6,22]: "]"
+                    - listitem [box=15,740,370,0]:
+                      - link "国家文物局办公室关于组织赴意大利文物预防性保护研修班的通知" [ref=f11e268] [cursor=pointer] [box=20,1132,280,28]:
+                        - /url: /art/2026/5/8/art_2318_48207.html
+                      - generic [ref=f11e269] [box=335,1132,50,22]:
+                        - generic [ref=f11e270] [box=335,1132,6,22]: "["
+                        - generic [ref=f11e271] [box=341,1132,36,22]: 05-08
+                        - generic [ref=f11e272] [box=377,1132,6,22]: "]"
+                    - listitem [box=15,740,370,0]:
+                      - link "国家文物局办公室关于组织赴西班牙文物数字资源管理与利用研修班的通知" [ref=f11e273] [cursor=pointer] [box=20,1160,280,28]:
+                        - /url: /art/2026/5/8/art_2318_48206.html
+                      - generic [ref=f11e274] [box=335,1160,50,22]:
+                        - generic [ref=f11e275] [box=335,1160,6,22]: "["
+                        - generic [ref=f11e276] [box=341,1160,36,22]: 05-08
+                        - generic [ref=f11e277] [box=377,1160,6,22]: "]"
+              - cell [ref=f11e278] [box=385,698,15,490]
+              - cell "政务公开 国家文物局2026年7至8月政府采购意向 [ 07-02 ] 国家文物局关于新叶村乡土建筑保护范围内省级历史文化（传统）村落保护利用重点村项目的复函 [ 06-25 ] 国家文物局办公室关于省级文物保护单位白云桥保护范围内S309荷梁线余姚段改建工程二期(海曙界至晓云村、斤岭下村至梁弄段)项目的复函 [ 06-25 ] 国家文物局办公室关于西沙埠遗址建设控制地带内青岛雀巢有限公司4#蒸发器项目的函 [ 06-24 ] 国家文物局关于良乡多宝佛塔保护范围及建设控制地带内良乡多宝佛塔环境整治工程项目的复函 [ 06-24 ] 国家文物局2026年7至8月政府采购意向 [ 06-24 ] 国家文物局关于老爷庙至西梁湾村天然气输配气管网铺设建设工程项目的复函 [ 06-23 ] 国家文物局关于拉加寺保护范围和建设控制地带内拉加镇防洪一期项目的复函 [ 06-22 ] 国家文物局关于徐州汉楚王墓群—狮子山楚王陵建设控制地带内徐州汉文化景区服务中心综合楼项目的批复 [ 06-22 ] 国家文物局关于在黑泉河村长城3段等保护范围及建设控制地带内进行芦家湾330千伏输电线路建设工程项目的复函 [ 06-18 ] 国家文物局关于在巴彦淖尔界壕2段保护范围及建设控制地带内进行乌拉盖河治理建设工程项目的复函 [ 06-18 ] 国家文物局关于洛南东汉帝陵保护范围一般保护区内高龙镇农副产品批发市场项目的批复 [ 06-17 ] 国家文物局关于大运河保护范围和建设控制地带内进行宿迁市废黄河（黄河故道）中泓治理工程设计方案（修订稿）的复函 [ 06-16 ] 国家文物局关于在三星堆遗址保护范围和建设控制地带内实施鸭子河三星堆段综合治理工程的复函 [ 06-16 ] 国家文物局办公室关于宝光寺建设控制地带内宝光博物馆建设项目的复函 [ 06-15 ] 国家文物局关于萧绍海塘（杭州段）保护范围内池杉路（北塘河绿带-横一路）项目的复函 [ 06-15 ]" [ref=f11e279] [box=400,698,370,490]:
+                - table [ref=f11e280] [box=400,698,369,37]:
+                  - rowgroup [ref=f11e281] [box=400,698,369,37]:
+                    - row [ref=f11e282] [box=400,698,369,37]:
+                      - cell [ref=f11e283] [box=400,698,282,37]:
+                        - link "政务公开" [ref=f11e284] [cursor=pointer] [box=410,706,64,21]:
+                          - /url: /col/col2398/index.html
+                      - cell [ref=f11e285] [box=682,698,87,37]:
+                        - link [ref=f11e287] [cursor=pointer] [box=747,713,12,12]:
+                          - /url: /col/col2398/index.html
+                - list [ref=f11e292] [box=400,740,370,22]:
+                  - listitem [box=400,740,370,0]:
+                    - link "国家文物局2026年7至8月政府采购意向" [ref=f11e293] [cursor=pointer] [box=405,740,280,28]:
+                      - /url: /art/2026/7/2/art_2237_48368.html
+                    - generic [ref=f11e294] [box=720,740,50,22]:
+                      - generic [ref=f11e295] [box=720,740,6,22]: "["
+                      - generic [ref=f11e296] [box=726,740,36,22]: 07-02
+                      - generic [ref=f11e297] [box=762,740,6,22]: "]"
+                  - listitem [box=400,740,370,0]:
+                    - link "国家文物局关于新叶村乡土建筑保护范围内省级历史文化（传统）村落保护利用重点村项目的复函" [ref=f11e298] [cursor=pointer] [box=405,768,280,28]:
+                      - /url: /art/2026/6/25/art_2237_48357.html
+                    - generic [ref=f11e299] [box=720,768,50,22]:
+                      - generic [ref=f11e300] [box=720,768,6,22]: "["
+                      - generic [ref=f11e301] [box=726,768,36,22]: 06-25
+                      - generic [ref=f11e302] [box=762,768,6,22]: "]"
+                  - listitem [box=400,740,370,0]:
+                    - link "国家文物局办公室关于省级文物保护单位白云桥保护范围内S309荷梁线余姚段改建工程二期(海曙界至晓云村、斤岭下村至梁弄段)项目的复函" [ref=f11e303] [cursor=pointer] [box=405,796,280,28]:
+                      - /url: /art/2026/6/25/art_2237_48358.html
+                    - generic [ref=f11e304] [box=720,796,50,22]:
+                      - generic [ref=f11e305] [box=720,796,6,22]: "["
+                      - generic [ref=f11e306] [box=726,796,36,22]: 06-25
+                      - generic [ref=f11e307] [box=762,796,6,22]: "]"
+                  - listitem [box=400,740,370,0]:
+                    - link "国家文物局办公室关于西沙埠遗址建设控制地带内青岛雀巢有限公司4#蒸发器项目的函" [ref=f11e308] [cursor=pointer] [box=405,824,280,28]:
+                      - /url: /art/2026/6/24/art_2237_48359.html
+                    - generic [ref=f11e309] [box=720,824,50,22]:
+                      - generic [ref=f11e310] [box=720,824,6,22]: "["
+                      - generic [ref=f11e311] [box=726,824,36,22]: 06-24
+                      - generic [ref=f11e312] [box=762,824,6,22]: "]"
+                  - listitem [box=400,740,370,0]:
+                    - link "国家文物局关于良乡多宝佛塔保护范围及建设控制地带内良乡多宝佛塔环境整治工程项目的复函" [ref=f11e313] [cursor=pointer] [box=405,852,280,28]:
+                      - /url: /art/2026/6/24/art_2237_48360.html
+                    - generic [ref=f11e314] [box=720,852,50,22]:
+                      - generic [ref=f11e315] [box=720,852,6,22]: "["
+                      - generic [ref=f11e316] [box=726,852,36,22]: 06-24
+                      - generic [ref=f11e317] [box=762,852,6,22]: "]"
+                  - listitem [box=400,740,370,0]:
+                    - link "国家文物局2026年7至8月政府采购意向" [ref=f11e318] [cursor=pointer] [box=405,880,280,28]:
+                      - /url: /art/2026/6/24/art_2237_48355.html
+                    - generic [ref=f11e319] [box=720,880,50,22]:
+                      - generic [ref=f11e320] [box=720,880,6,22]: "["
+                      - generic [ref=f11e321] [box=726,880,36,22]: 06-24
+                      - generic [ref=f11e322] [box=762,880,6,22]: "]"
+                  - listitem [box=400,740,370,0]:
+                    - link "国家文物局关于老爷庙至西梁湾村天然气输配气管网铺设建设工程项目的复函" [ref=f11e323] [cursor=pointer] [box=405,908,280,28]:
+                      - /url: /art/2026/6/23/art_2237_48361.html
+                    - generic [ref=f11e324] [box=720,908,50,22]:
+                      - generic [ref=f11e325] [box=720,908,6,22]: "["
+                      - generic [ref=f11e326] [box=726,908,36,22]: 06-23
+                      - generic [ref=f11e327] [box=762,908,6,22]: "]"
+                  - listitem [box=400,740,370,0]:
+                    - link "国家文物局关于拉加寺保护范围和建设控制地带内拉加镇防洪一期项目的复函" [ref=f11e328] [cursor=pointer] [box=405,936,280,28]:
+                      - /url: /art/2026/6/22/art_2237_48362.html
+                    - generic [ref=f11e329] [box=720,936,50,22]:
+                      - generic [ref=f11e330] [box=720,936,6,22]: "["
+                      - generic [ref=f11e331] [box=726,936,36,22]: 06-22
+                      - generic [ref=f11e332] [box=762,936,6,22]: "]"
+                  - listitem [box=400,740,370,0]:
+                    - link "国家文物局关于徐州汉楚王墓群—狮子山楚王陵建设控制地带内徐州汉文化景区服务中心综合楼项目的批复" [ref=f11e333] [cursor=pointer] [box=405,964,280,28]:
+                      - /url: /art/2026/6/22/art_2237_48363.html
+                    - generic [ref=f11e334] [box=720,964,50,22]:
+                      - generic [ref=f11e335] [box=720,964,6,22]: "["
+                      - generic [ref=f11e336] [box=726,964,36,22]: 06-22
+                      - generic [ref=f11e337] [box=762,964,6,22]: "]"
+                  - listitem [box=400,740,370,0]:
+                    - link "国家文物局关于在黑泉河村长城3段等保护范围及建设控制地带内进行芦家湾330千伏输电线路建设工程项目的复函" [ref=f11e338] [cursor=pointer] [box=405,992,280,28]:
+                      - /url: /art/2026/6/18/art_2237_48341.html
+                    - generic [ref=f11e339] [box=720,992,50,22]:
+                      - generic [ref=f11e340] [box=720,992,6,22]: "["
+                      - generic [ref=f11e341] [box=726,992,36,22]: 06-18
+                      - generic [ref=f11e342] [box=762,992,6,22]: "]"
+                  - listitem [box=400,762,370,0]:
+                    - link "国家文物局关于在巴彦淖尔界壕2段保护范围及建设控制地带内进行乌拉盖河治理建设工程项目的复函" [ref=f11e343] [cursor=pointer] [box=405,1020,280,28]:
+                      - /url: /art/2026/6/18/art_2237_48342.html
+                    - generic [ref=f11e344] [box=720,1020,50,22]:
+                      - generic [ref=f11e345] [box=720,1020,6,22]: "["
+                      - generic [ref=f11e346] [box=726,1020,36,22]: 06-18
+                      - generic [ref=f11e347] [box=762,1020,6,22]: "]"
+                  - listitem [box=400,762,370,0]:
+                    - link "国家文物局关于洛南东汉帝陵保护范围一般保护区内高龙镇农副产品批发市场项目的批复" [ref=f11e348] [cursor=pointer] [box=405,1048,280,28]:
+                      - /url: /art/2026/6/17/art_2237_48343.html
+                    - generic [ref=f11e349] [box=720,1048,50,22]:
+                      - generic [ref=f11e350] [box=720,1048,6,22]: "["
+                      - generic [ref=f11e351] [box=726,1048,36,22]: 06-17
+                      - generic [ref=f11e352] [box=762,1048,6,22]: "]"
+                  - listitem [box=400,762,370,0]:
+                    - link "国家文物局关于大运河保护范围和建设控制地带内进行宿迁市废黄河（黄河故道）中泓治理工程设计方案（修订稿）的复函" [ref=f11e353] [cursor=pointer] [box=405,1076,280,28]:
+                      - /url: /art/2026/6/16/art_2237_48344.html
+                    - generic [ref=f11e354] [box=720,1076,50,22]:
+                      - generic [ref=f11e355] [box=720,1076,6,22]: "["
+                      - generic [ref=f11e356] [box=726,1076,36,22]: 06-16
+                      - generic [ref=f11e357] [box=762,1076,6,22]: "]"
+                  - listitem [box=400,762,370,0]:
+                    - link "国家文物局关于在三星堆遗址保护范围和建设控制地带内实施鸭子河三星堆段综合治理工程的复函" [ref=f11e358] [cursor=pointer] [box=405,1104,280,28]:
+                      - /url: /art/2026/6/16/art_2237_48345.html
+                    - generic [ref=f11e359] [box=720,1104,50,22]:
+                      - generic [ref=f11e360] [box=720,1104,6,22]: "["
+                      - generic [ref=f11e361] [box=726,1104,36,22]: 06-16
+                      - generic [ref=f11e362] [box=762,1104,6,22]: "]"
+                  - listitem [box=400,762,370,0]:
+                    - link "国家文物局办公室关于宝光寺建设控制地带内宝光博物馆建设项目的复函" [ref=f11e363] [cursor=pointer] [box=405,1132,280,28]:
+                      - /url: /art/2026/6/15/art_2237_48346.html
+                    - generic [ref=f11e364] [box=720,1132,50,22]:
+                      - generic [ref=f11e365] [box=720,1132,6,22]: "["
+                      - generic [ref=f11e366] [box=726,1132,36,22]: 06-15
+                      - generic [ref=f11e367] [box=762,1132,6,22]: "]"
+                  - listitem [box=400,762,370,0]:
+                    - link "国家文物局关于萧绍海塘（杭州段）保护范围内池杉路（北塘河绿带-横一路）项目的复函" [ref=f11e368] [cursor=pointer] [box=405,1160,280,28]:
+                      - /url: /art/2026/6/15/art_2237_48347.html
+                    - generic [ref=f11e369] [box=720,1160,50,22]:
+                      - generic [ref=f11e370] [box=720,1160,6,22]: "["
+                      - generic [ref=f11e371] [box=726,1160,36,22]: 06-15
+                      - generic [ref=f11e372] [box=762,1160,6,22]: "]"
+        - table [ref=f11e373] [box=15,1188,766,15]:
+          - rowgroup [ref=f11e374] [box=15,1188,766,15]:
+            - row [ref=f11e375] [box=15,1188,766,15]:
+              - cell [ref=f11e376] [box=15,1188,766,15]
+        - table [ref=f11e377] [box=15,1203,755,192]:
+          - rowgroup [ref=f11e378] [box=15,1203,755,192]:
+            - row [ref=f11e379] [box=15,1203,755,192]:
+              - cell [ref=f11e380] [box=15,1203,370,192]:
+                - table [ref=f11e381] [box=15,1203,369,37]:
+                  - rowgroup [ref=f11e382] [box=15,1203,369,37]:
+                    - row [ref=f11e383] [box=15,1203,369,37]:
+                      - cell [ref=f11e384] [box=15,1203,340,37]:
+                        - link "办事服务" [ref=f11e385] [cursor=pointer] [box=25,1211,64,21]:
+                          - /url: http://gl.sach.gov.cn/#/Home/index
+                      - cell [ref=f11e386] [box=354,1203,29,37]
+                - table [ref=f11e387] [box=15,1240,369,155]:
+                  - rowgroup [ref=f11e388] [box=15,1240,369,155]:
+                    - row [ref=f11e389] [box=15,1240,369,155]:
+                      - cell [ref=f11e390] [box=15,1240,369,155]:
+                        - link [ref=f11e392] [cursor=pointer] [box=54,1333,114,12]:
+                          - /url: /col/col2292/index.html
+                        - link [ref=f11e395] [cursor=pointer] [box=238,1333,114,12]:
+                          - /url: /col/col2262/index.html
+              - cell [ref=f11e397] [box=385,1203,15,192]
+              - cell [ref=f11e398] [box=400,1203,370,192]:
+                - table [ref=f11e399] [box=400,1203,369,37]:
+                  - rowgroup [ref=f11e400] [box=400,1203,369,37]:
+                    - row [ref=f11e401] [box=400,1203,369,37]:
+                      - cell [ref=f11e402] [box=400,1203,340,37]:
+                        - link "互动交流" [ref=f11e403] [cursor=pointer] [box=410,1211,64,21]:
+                          - /url: /col/col1066/index.html
+                      - cell [ref=f11e404] [box=739,1203,29,37]
+                - table [ref=f11e405] [box=400,1240,369,130]:
+                  - rowgroup [ref=f11e406] [box=400,1240,369,130]:
+                    - row [ref=f11e407] [box=400,1240,369,130]:
+                      - cell [ref=f11e408] [box=400,1240,369,130]:
+                        - table [ref=f11e410] [box=402,1255,364,100]:
+                          - rowgroup [ref=f11e411] [box=402,1255,364,100]:
+                            - row [ref=f11e412] [box=402,1255,364,100]:
+                              - cell [ref=f11e413] [box=402,1255,48,100]:
+                                - link [ref=f11e415] [cursor=pointer] [box=402,1293,48,12]:
+                                  - /url: /col/col1067/index.html
+                                - link "留言板" [ref=f11e418] [cursor=pointer] [box=408,1315,36,12]:
+                                  - /url: /col/col1067/index.html
+                              - cell [ref=f11e419] [box=450,1255,31,100]
+                              - cell [ref=f11e420] [box=481,1255,48,100]:
+                                - link "局长信箱" [ref=f11e422] [cursor=pointer] [box=481,1290,48,12]:
+                                  - /url: /col/col1065/index.html
+                                - link [ref=f11e424] [cursor=pointer] [box=481,1343,48,12]:
+                                  - /url: /col/col1065/index.html
+                              - cell [ref=f11e426] [box=529,1255,31,100]
+                              - cell [ref=f11e427] [box=560,1255,48,100]:
+                                - link [ref=f11e429] [cursor=pointer] [box=560,1293,48,12]:
+                                  - /url: /col/col1966/index.html
+                                - link "意见征集" [ref=f11e432] [cursor=pointer] [box=560,1315,48,12]:
+                                  - /url: /col/col1966/index.html
+                              - cell [ref=f11e433] [box=608,1255,31,100]
+                              - cell [ref=f11e434] [box=639,1255,48,100]:
+                                - link "解读 与回应" [ref=f11e436] [cursor=pointer] [box=645,1270,36,27]:
+                                  - /url: /col/col1967/index.html
+                                  - text: 解读与回应
+                                - link [ref=f11e438] [cursor=pointer] [box=639,1343,48,12]:
+                                  - /url: /col/col1967/index.html
+                              - cell [ref=f11e440] [box=687,1255,31,100]
+                              - cell [ref=f11e441] [box=718,1255,48,100]:
+                                - link [ref=f11e443] [cursor=pointer] [box=718,1293,48,12]:
+                                  - /url: /vipchat/
+                                - link "新闻 发布会" [ref=f11e446] [cursor=pointer] [box=724,1315,36,34]:
+                                  - /url: /vipchat/
+                                  - text: 新闻发布会
+      - generic [ref=f11e447] [box=781,668,234,664]:
+        - table [ref=f11e448] [box=781,668,234,15]:
+          - rowgroup [ref=f11e449] [box=781,668,234,15]:
+            - row [ref=f11e450] [box=781,668,234,15]:
+              - cell [ref=f11e451] [box=781,668,234,15]
+        - table [ref=f11e452] [box=781,683,234,8]:
+          - rowgroup [ref=f11e453] [box=781,683,234,8]:
+            - row [ref=f11e454] [box=781,683,234,8]:
+              - cell [ref=f11e455] [box=781,683,234,8]
+        - table [ref=f11e456] [box=781,691,234,37]:
+          - rowgroup [ref=f11e457] [box=781,692,232,35]:
+            - row [ref=f11e458] [box=781,692,232,35]:
+              - cell [ref=f11e459] [box=781,692,232,35]:
+                - list [ref=f11e461] [box=781,692,230,35]:
+                  - listitem [ref=f11e462] [cursor=pointer] [box=781,692,230,35]:
+                    - link "政务信息系统整合平台▼" [ref=f11e463] [box=791,699,176,21]:
+                      - /url: /col/col1053/index.html
+        - table [ref=f11e464] [box=781,728,234,8]:
+          - rowgroup [ref=f11e465] [box=781,728,234,8]:
+            - row [ref=f11e466] [box=781,728,234,8]:
+              - cell [ref=f11e467] [box=781,728,234,8]
+        - table [ref=f11e468] [box=781,736,234,39]:
+          - rowgroup [ref=f11e469] [box=781,737,232,37]:
+            - row [ref=f11e470] [box=781,737,232,37]:
+              - cell [ref=f11e471] [box=781,737,186,37]:
+                - link "专题" [ref=f11e472] [cursor=pointer] [box=791,745,32,21]:
+                  - /url: /col/col1049/index.html
+              - cell [ref=f11e473] [box=968,737,46,37]:
+                - link [ref=f11e475] [cursor=pointer] [box=992,751,12,12]:
+                  - /url: /col/col1049/index.html
+        - table [ref=f11e477] [box=781,775,234,236]:
+          - rowgroup [ref=f11e478] [box=781,775,232,235]:
+            - row [ref=f11e479] [box=781,775,232,235]:
+              - cell [ref=f11e480] [box=781,775,232,235]:
+                - generic [ref=f11e482] [box=790,776,215,233]:
+                  - link [ref=f11e484] [cursor=pointer] [box=790,823,217,12]:
+                    - /url: http://www.ncha.gov.cn/col/col2864/index.html
+                  - link [ref=f11e487] [cursor=pointer] [box=790,879,217,12]:
+                    - /url: http://www.ncha.gov.cn/col/col2853/index.html
+                  - link [ref=f11e490] [cursor=pointer] [box=790,936,217,12]:
+                    - /url: http://www.ncha.gov.cn/col/col2849/index.html
+                  - link [ref=f11e493] [cursor=pointer] [box=790,993,217,12]:
+                    - /url: http://www.ncha.gov.cn/col/col2841/index.html
+        - table [ref=f11e496] [box=781,1011,234,8]:
+          - rowgroup [ref=f11e497] [box=781,1011,234,8]:
+            - row [ref=f11e498] [box=781,1011,234,8]:
+              - cell [ref=f11e499] [box=781,1011,234,8]
+        - table [ref=f11e500] [box=781,1019,234,243]:
+          - rowgroup [ref=f11e501] [box=781,1020,232,241]:
+            - row [ref=f11e502] [box=781,1020,232,241]:
+              - cell [ref=f11e503] [box=781,1020,232,241]:
+                - link [ref=f11e505] [cursor=pointer] [box=790,1066,215,12]:
+                  - /url: http://nb.ncha.gov.cn/museum.html
+                - link [ref=f11e508] [cursor=pointer] [box=790,1126,215,12]:
+                  - /url: http://jb.ncha.gov.cn/
+                - link [ref=f11e511] [cursor=pointer] [box=790,1183,215,12]:
+                  - /url: https://liuyan.www.gov.cn/2025wwzfgzbgtjy/bmdf.html?q=gjwwj
+                - link [ref=f11e514] [cursor=pointer] [box=790,1243,215,12]:
+                  - /url: https://www.gov.cn/zhengce/zczhjd/
+        - table [ref=f11e516] [box=781,1261,234,8]:
+          - rowgroup [ref=f11e517] [box=781,1261,234,8]:
+            - row [ref=f11e518] [box=781,1261,234,8]:
+              - cell [ref=f11e519] [box=781,1261,234,8]
+        - table [ref=f11e520] [box=781,1269,234,8]:
+          - rowgroup [ref=f11e521] [box=781,1269,234,8]:
+            - row [ref=f11e522] [box=781,1269,234,8]:
+              - cell [ref=f11e523] [box=781,1269,234,8]
+        - table [ref=f11e524] [box=781,1277,234,55]:
+          - rowgroup [ref=f11e525] [box=781,1278,232,53]:
+            - row [ref=f11e526] [box=781,1278,232,53]:
+              - cell [ref=f11e527] [box=781,1278,232,53]:
+                - link [ref=f11e530] [cursor=pointer] [box=781,1278,232,53]:
+                  - /url: http://mail.ncha.gov.cn/index.php
+                  - paragraph [ref=f11e531] [box=781,1278,232,53]
+    - table [ref=f11e534] [box=29,1410,974,32]:
+      - rowgroup [ref=f11e535] [box=29,1410,974,32]:
+        - row [ref=f11e536] [box=29,1410,974,32]:
+          - cell "相关链接：" [ref=f11e537] [box=29,1410,170,32]
+          - cell [ref=f11e538] [box=199,1410,192,32]:
+            - link "中央人民政府网站" [ref=f11e539] [cursor=pointer] [box=239,1416,112,19]:
+              - /url: http://www.gov.cn
+          - cell "政府网站" [ref=f11e540] [box=391,1410,194,32]:
+            - list [box=431,1413,114,0]:
+              - listitem [ref=f11e541] [box=431,1413,114,28]:
+                - generic [ref=f11e542] [box=431,1413,114,28]: 政府网站
+          - cell "直属单位网站" [ref=f11e543] [box=585,1410,194,32]:
+            - list [box=625,1413,114,0]:
+              - listitem [ref=f11e544] [box=625,1413,114,28]:
+                - generic [ref=f11e545] [box=625,1413,114,28]: 直属单位网站
+          - cell "主管社会组织网站" [ref=f11e546] [box=779,1410,224,32]:
+            - list [box=819,1413,144,0]:
+              - listitem [ref=f11e547] [box=819,1413,144,28]:
+                - generic [ref=f11e548] [box=819,1413,144,28]: 主管社会组织网站
+  - generic [ref=f11e551] [box=15,1456,1002,38]:
+    - link "联系我们" [ref=f11e552] [cursor=pointer] [box=448,1467,58,14]:
+      - /url: /col/col1682/index.html
+    - text: "|"
+    - link "网站声明" [ref=f11e553] [cursor=pointer] [box=525,1467,58,14]:
+      - /url: /col/col1748/index.html
+  - generic [ref=f11e554] [box=15,1493,1002,216]:
+    - generic [ref=f11e555] [box=44,1493,944,126]:
+      - paragraph [ref=f11e556] [box=44,1518,944,26]:
+        - text: Copyright Reserved 2014-2025 版权所有 国家文物局
+        - link "京ICP备13034673号-2" [ref=f11e557] [cursor=pointer] [box=609,1524,119,12]:
+          - /url: http://beian.miit.gov.cn/
+      - paragraph [ref=f11e558] [box=44,1554,944,26]: 网站管理：中国文物报社 技术服务电话：86-10-84078838-6168
+      - paragraph [ref=f11e559] [box=44,1590,944,29]:
+        - text: 网站标识码：bm72000002
+        - link "京公网安备 11010102003995号" [ref=f11e560] [cursor=pointer] [box=480,1600,208,12]:
+          - /url: http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010102003995
+    - table [ref=f11e563] [box=16,1629,1000,80]:
+      - rowgroup [ref=f11e564] [box=16,1629,1000,80]:
+        - row [ref=f11e565] [box=16,1629,1000,80]:
+          - cell [ref=f11e566] [box=16,1629,490,80]:
+            - link [ref=f11e567] [cursor=pointer] [box=426,1699,80,12]:
+              - /url: http://bszs.conac.cn/sitename?method=show&id=0C1EC20C5B04404AE053012819AC0B79
+          - cell [ref=f11e569] [box=506,1629,20,80]
+          - cell [ref=f11e570] [box=526,1629,490,80]:
+            - link [ref=f11e571] [cursor=pointer] [box=526,1686,110,12]:
+              - /url: https://zfwzgl.www.gov.cn/exposure/jiucuo.html?site_code=bm72000002&url=http%3A%2F%2Fwww.ncha.gov.cn%2F
+    - generic [ref=f11e572] [box=1038,493,85,175]:
+      - paragraph [ref=f11e584] [box=1039,522,70,60]
+      - paragraph [ref=f11e586] [box=1039,596,70,60]

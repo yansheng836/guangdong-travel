@@ -1,0 +1,639 @@
+- generic [active] [ref=f11e1]:
+  - generic [ref=f11e2]:
+    - generic [ref=f11e4]:
+      - generic [ref=f11e5]: 2026年7月14日 星期二
+      - table [ref=f11e7]:
+        - rowgroup [ref=f11e8]:
+          - row [ref=f11e9]:
+            - cell [ref=f11e10]:
+              - link "无障碍阅读" [ref=f11e11] [cursor=pointer]:
+                - /url: javascript:;
+              - text: "|"
+              - link "简体版" [ref=f11e12] [cursor=pointer]:
+                - /url: javascript:zh_tran('n')
+              - text: "|"
+              - link "繁体版" [ref=f11e13] [cursor=pointer]:
+                - /url: javascript:zh_tran('t')
+    - generic [ref=f11e15]:
+      - link [ref=f11e18] [cursor=pointer]:
+        - /url: /col/col2762/index.html
+      - table [ref=f11e19]:
+        - rowgroup [ref=f11e20]:
+          - row [ref=f11e21]:
+            - cell [ref=f11e22]
+            - cell [ref=f11e24]:
+              - table [ref=f11e26]:
+                - rowgroup [ref=f11e27]:
+                  - row [ref=f11e28]:
+                    - cell [ref=f11e29]:
+                      - textbox [ref=f11e30]
+                    - cell [ref=f11e31]:
+                      - button "Submit" [ref=f11e32] [cursor=pointer]
+                    - cell [ref=f11e33]
+                    - cell [ref=f11e34]:
+                      - link "高级搜索" [ref=f11e35] [cursor=pointer]:
+                        - /url: /jsearch/search.do?pagemode=advsearch
+    - generic [ref=f11e37]:
+      - list:
+        - listitem [ref=f11e38]:
+          - link "首页" [ref=f11e39] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=f11e40]: "|"
+        - listitem [ref=f11e41]:
+          - link "机构概况" [ref=f11e42] [cursor=pointer]:
+            - /url: /col/col1019/index.html
+        - listitem [ref=f11e43]: "|"
+        - listitem [ref=f11e44]:
+          - link "新闻资讯" [ref=f11e45] [cursor=pointer]:
+            - /url: /col/col722/index.html
+        - listitem [ref=f11e46]: "|"
+        - listitem [ref=f11e47]:
+          - link "政务公开" [ref=f11e48] [cursor=pointer]:
+            - /url: /col/col2398/index.html
+        - listitem [ref=f11e49]: "|"
+        - listitem [ref=f11e50]:
+          - link "办事服务" [ref=f11e51] [cursor=pointer]:
+            - /url: /col/col2292/index.html
+        - listitem [ref=f11e52]: "|"
+        - listitem [ref=f11e53]:
+          - link "互动交流" [ref=f11e54] [cursor=pointer]:
+            - /url: /col/col1066/index.html
+        - listitem [ref=f11e55]: "|"
+        - listitem [ref=f11e56]:
+          - link "专题" [ref=f11e57] [cursor=pointer]:
+            - /url: /col/col1049/index.html
+    - link [ref=f11e59] [cursor=pointer]:
+      - /url: /col/col2376/index.html
+    - generic [ref=f11e61]:
+      - table [ref=f11e64]:
+        - rowgroup [ref=f11e65]:
+          - row [ref=f11e588]:
+            - cell [ref=f11e589]:
+              - generic [ref=f11e68]:
+                - list [ref=f11e70]:
+                  - listitem [ref=f11e71] [cursor=pointer]
+                  - listitem [ref=f11e72] [cursor=pointer]
+                  - listitem [ref=f11e73] [cursor=pointer]
+                  - listitem [ref=f11e74] [cursor=pointer]
+                  - listitem [ref=f11e75] [cursor=pointer]
+                - list [ref=f11e77]:
+                  - listitem [ref=f11e590]:
+                    - link [ref=f11e591] [cursor=pointer]:
+                      - /url: /art/2026/6/13/art_2096_203242.html
+                      - paragraph [ref=f11e593]: 文物属于人民 服务人民 2026年文化和自然遗...
+            - cell [ref=f11e83]
+            - cell [ref=f11e84]:
+              - generic [ref=f11e85]:
+                - table [ref=f11e86]:
+                  - rowgroup [ref=f11e87]:
+                    - row [ref=f11e88]:
+                      - cell [ref=f11e89]:
+                        - link "庆祝中国共产党成立105周年大会在京隆重举行" [ref=f11e90] [cursor=pointer]:
+                          - /url: /art/2026/7/1/art_2664_203510.html
+                - paragraph [ref=f11e92]:
+                  - text: 庆祝中国共产党成立105周年大会在京隆重举行习近平发表重要讲话强调，中国共产党之所以能够在105年奋斗中不断铸就辉煌，历史和人民之所以选择中...
+                  - link "[详细]" [ref=f11e93] [cursor=pointer]:
+                    - /url: /art/2026/7/1/art_2664_203510.html
+              - generic [ref=f11e94]:
+                - table [ref=f11e95]:
+                  - rowgroup [ref=f11e96]:
+                    - row [ref=f11e97]:
+                      - cell [ref=f11e98]
+                      - cell [ref=f11e99] [cursor=pointer]:
+                        - link "时政要闻" [ref=f11e100]:
+                          - /url: /col/col2664/index.html
+                      - cell [ref=f11e101] [cursor=pointer]:
+                        - link "国务院要闻" [ref=f11e102]:
+                          - /url: /col/col1699/index.html
+                      - cell [ref=f11e103] [cursor=pointer]:
+                        - link "文物新闻" [ref=f11e104]:
+                          - /url: /col/col722/index.html
+                      - cell [ref=f11e105] [cursor=pointer]:
+                        - link "党建工作" [ref=f11e106]:
+                          - /url: /col/col1879/index.html
+                      - cell [ref=f11e107] [cursor=pointer]:
+                        - link "政策解读" [ref=f11e108]:
+                          - /url: /col/col1961/index.html
+                      - cell [ref=f11e109] [cursor=pointer]:
+                        - link "派驻监督" [ref=f11e110]:
+                          - /url: /col/col2027/index.html
+                      - cell [ref=f11e111] [cursor=pointer]:
+                        - link "工作资讯" [ref=f11e112]:
+                          - /url: /col/col1025/index.html
+                      - cell [ref=f11e113] [cursor=pointer]:
+                        - link "行业信息" [ref=f11e114]:
+                          - /url: /col/col723/index.html
+                      - cell [ref=f11e115] [cursor=pointer]:
+                        - link "媒体关注" [ref=f11e116]:
+                          - /url: /col/col1027/index.html
+                      - cell [ref=f11e117]
+                - generic [ref=f11e118]:
+                  - table [ref=f11e119]:
+                    - rowgroup [ref=f11e120]:
+                      - row [ref=f11e121]:
+                        - cell [ref=f11e122]
+                        - cell [ref=f11e124]:
+                          - link "中共中央办公厅、国务院办公厅印发《关于全力做好防汛抗旱工作的通知》" [ref=f11e125] [cursor=pointer]:
+                            - /url: /art/2026/7/11/art_2664_203695.html
+                        - cell "[07-11]" [ref=f11e126]
+                  - table [ref=f11e127]:
+                    - rowgroup [ref=f11e128]:
+                      - row [ref=f11e129]:
+                        - cell [ref=f11e130]
+                        - cell [ref=f11e132]:
+                          - link "习近平出席国家科学技术奖励大会两院院士大会中国科协第十一次全国代表大会..." [ref=f11e133] [cursor=pointer]:
+                            - /url: /art/2026/7/9/art_2664_203663.html
+                        - cell "[07-09]" [ref=f11e134]
+                  - table [ref=f11e135]:
+                    - rowgroup [ref=f11e136]:
+                      - row [ref=f11e137]:
+                        - cell [ref=f11e138]
+                        - cell [ref=f11e140]:
+                          - link "习近平对防汛救灾工作作出重要指示强调 要全力组织抢险救援、伤员救治、群..." [ref=f11e141] [cursor=pointer]:
+                            - /url: /art/2026/7/9/art_2664_203662.html
+                        - cell "[07-09]" [ref=f11e142]
+                  - table [ref=f11e143]:
+                    - rowgroup [ref=f11e144]:
+                      - row [ref=f11e145]:
+                        - cell [ref=f11e146]
+                        - cell [ref=f11e148]:
+                          - link "集聚人才合力 共赴壮阔前程——习近平总书记在庆祝中国共产党成立一百零五..." [ref=f11e149] [cursor=pointer]:
+                            - /url: /art/2026/7/9/art_2664_203661.html
+                        - cell "[07-09]" [ref=f11e150]
+                  - table [ref=f11e151]:
+                    - rowgroup [ref=f11e152]:
+                      - row [ref=f11e153]:
+                        - cell [ref=f11e154]
+                        - cell [ref=f11e156]:
+                          - link "纪念全民族抗战爆发89周年仪式在京举行 尹力主持" [ref=f11e157] [cursor=pointer]:
+                            - /url: /art/2026/7/9/art_2664_203660.html
+                        - cell "[07-09]" [ref=f11e158]
+                  - table [ref=f11e159]:
+                    - rowgroup [ref=f11e160]:
+                      - row [ref=f11e161]:
+                        - cell [ref=f11e162]
+                        - cell [ref=f11e164]:
+                          - link "中央宣传部新命名一批全国爱国主义教育示范基地" [ref=f11e165] [cursor=pointer]:
+                            - /url: /art/2026/7/9/art_2664_203659.html
+                        - cell "[07-09]" [ref=f11e166]
+                  - table [ref=f11e167]:
+                    - rowgroup [ref=f11e168]:
+                      - row [ref=f11e169]:
+                        - cell [ref=f11e170]
+                        - cell [ref=f11e172]:
+                          - link "《习近平关于基层工作方法的重要论述学习读本》出版发行" [ref=f11e173] [cursor=pointer]:
+                            - /url: /art/2026/7/9/art_2664_203658.html
+                        - cell "[07-09]" [ref=f11e174]
+      - generic [ref=f11e175]:
+        - table [ref=f11e176]:
+          - rowgroup [ref=f11e177]:
+            - row [ref=f11e178]:
+              - cell [ref=f11e179]
+        - table [ref=f11e180]:
+          - rowgroup [ref=f11e181]:
+            - row [ref=f11e182]:
+              - cell [ref=f11e183]
+        - table [ref=f11e184]:
+          - rowgroup [ref=f11e185]:
+            - row [ref=f11e186]:
+              - cell "通知公告 国家文物局关于印发《革命文物保护工程技术导则（试行）》的通知 [ 07-12 ] 国家文物局关于组织开展第九批国家文物局重点科研基地申报工作的通知 [ 07-06 ] 国家文物局关于印发《国有文物资源数据管理办法》的通知 [ 07-06 ] 国家文物局政府网站2026年第二季度抽查情况报告 [ 06-30 ] 国家文物局政务新媒体2026年第二季度抽查情况报告 [ 06-30 ] 国家文物局公布庆祝中国共产党成立105周年主题陈列展览推介名单 [ 06-30 ] 国家文物局办公室关于公示《馆藏油画保护术语》等4项拟立项行业标准项目的通知 [ 06-24 ] 国家文物局 中央网信办关于公布2026年度中华文物新媒体传播精品推介项目名单的通知 [ 06-13 ] 国家文物局关于加强文物防灾减灾救灾工作的通知 [ 06-02 ] 国家文物局2026年度公开遴选公务员拟任职人员公示公告 [ 06-01 ] 国家文物局2026年度拟录用公务员公示公告 [ 06-01 ] 2026年度“博物馆里读中国——弘扬中华优秀传统文化、培育社会主义核心价值观”主题展览征集推介活动初评结果公示 [ 05-27 ] 国家文物局办公室关于组织赴突尼斯布匿罗马时期遗址出土文物研修班的通知 [ 05-13 ] “文物安全守护人”入围终评名单公示 [ 05-13 ] 国家文物局办公室关于组织赴意大利文物预防性保护研修班的通知 [ 05-08 ] 国家文物局办公室关于组织赴西班牙文物数字资源管理与利用研修班的通知 [ 05-08 ]" [ref=f11e187]:
+                - table [ref=f11e188]:
+                  - rowgroup [ref=f11e189]:
+                    - row [ref=f11e190]:
+                      - cell [ref=f11e191]:
+                        - link "通知公告" [ref=f11e192] [cursor=pointer]:
+                          - /url: /col/col2237/index.html?id=0
+                      - cell [ref=f11e193]:
+                        - link [ref=f11e195] [cursor=pointer]:
+                          - /url: /col/col2237/index.html?id=0
+                - generic [ref=f11e197]:
+                  - list:
+                    - listitem:
+                      - link "国家文物局关于印发《革命文物保护工程技术导则（试行）》的通知" [ref=f11e198] [cursor=pointer]:
+                        - /url: /art/2026/7/12/art_2318_48380.html
+                      - generic [ref=f11e199]:
+                        - generic [ref=f11e200]: "["
+                        - generic [ref=f11e201]: 07-12
+                        - generic [ref=f11e202]: "]"
+                    - listitem:
+                      - link "国家文物局关于组织开展第九批国家文物局重点科研基地申报工作的通知" [ref=f11e203] [cursor=pointer]:
+                        - /url: /art/2026/7/6/art_2318_48379.html
+                      - generic [ref=f11e204]:
+                        - generic [ref=f11e205]: "["
+                        - generic [ref=f11e206]: 07-06
+                        - generic [ref=f11e207]: "]"
+                    - listitem:
+                      - link "国家文物局关于印发《国有文物资源数据管理办法》的通知" [ref=f11e208] [cursor=pointer]:
+                        - /url: /art/2026/7/6/art_2318_48378.html
+                      - generic [ref=f11e209]:
+                        - generic [ref=f11e210]: "["
+                        - generic [ref=f11e211]: 07-06
+                        - generic [ref=f11e212]: "]"
+                    - listitem:
+                      - link "国家文物局政府网站2026年第二季度抽查情况报告" [ref=f11e213] [cursor=pointer]:
+                        - /url: /art/2026/6/30/art_2318_48377.html
+                      - generic [ref=f11e214]:
+                        - generic [ref=f11e215]: "["
+                        - generic [ref=f11e216]: 06-30
+                        - generic [ref=f11e217]: "]"
+                    - listitem:
+                      - link "国家文物局政务新媒体2026年第二季度抽查情况报告" [ref=f11e218] [cursor=pointer]:
+                        - /url: /art/2026/6/30/art_2318_48376.html
+                      - generic [ref=f11e219]:
+                        - generic [ref=f11e220]: "["
+                        - generic [ref=f11e221]: 06-30
+                        - generic [ref=f11e222]: "]"
+                    - listitem:
+                      - link "国家文物局公布庆祝中国共产党成立105周年主题陈列展览推介名单" [ref=f11e223] [cursor=pointer]:
+                        - /url: /art/2026/6/30/art_2318_48364.html
+                      - generic [ref=f11e224]:
+                        - generic [ref=f11e225]: "["
+                        - generic [ref=f11e226]: 06-30
+                        - generic [ref=f11e227]: "]"
+                    - listitem:
+                      - link "国家文物局办公室关于公示《馆藏油画保护术语》等4项拟立项行业标准项目的通知" [ref=f11e228] [cursor=pointer]:
+                        - /url: /art/2026/6/24/art_2318_48356.html
+                      - generic [ref=f11e229]:
+                        - generic [ref=f11e230]: "["
+                        - generic [ref=f11e231]: 06-24
+                        - generic [ref=f11e232]: "]"
+                    - listitem:
+                      - link "国家文物局 中央网信办关于公布2026年度中华文物新媒体传播精品推介项目名单的通知" [ref=f11e233] [cursor=pointer]:
+                        - /url: /art/2026/6/13/art_2318_48340.html
+                      - generic [ref=f11e234]:
+                        - generic [ref=f11e235]: "["
+                        - generic [ref=f11e236]: 06-13
+                        - generic [ref=f11e237]: "]"
+                    - listitem:
+                      - link "国家文物局关于加强文物防灾减灾救灾工作的通知" [ref=f11e238] [cursor=pointer]:
+                        - /url: /art/2026/6/2/art_2318_48267.html
+                      - generic [ref=f11e239]:
+                        - generic [ref=f11e240]: "["
+                        - generic [ref=f11e241]: 06-02
+                        - generic [ref=f11e242]: "]"
+                    - listitem:
+                      - link "国家文物局2026年度公开遴选公务员拟任职人员公示公告" [ref=f11e243] [cursor=pointer]:
+                        - /url: /art/2026/6/1/art_2318_48266.html
+                      - generic [ref=f11e244]:
+                        - generic [ref=f11e245]: "["
+                        - generic [ref=f11e246]: 06-01
+                        - generic [ref=f11e247]: "]"
+                    - listitem:
+                      - link "国家文物局2026年度拟录用公务员公示公告" [ref=f11e248] [cursor=pointer]:
+                        - /url: /art/2026/6/1/art_2318_48265.html
+                      - generic [ref=f11e249]:
+                        - generic [ref=f11e250]: "["
+                        - generic [ref=f11e251]: 06-01
+                        - generic [ref=f11e252]: "]"
+                    - listitem:
+                      - link "2026年度“博物馆里读中国——弘扬中华优秀传统文化、培育社会主义核心价值观”主题展览征集推介活动初评结果公示" [ref=f11e253] [cursor=pointer]:
+                        - /url: /art/2026/5/27/art_2318_48264.html
+                      - generic [ref=f11e254]:
+                        - generic [ref=f11e255]: "["
+                        - generic [ref=f11e256]: 05-27
+                        - generic [ref=f11e257]: "]"
+                    - listitem:
+                      - link "国家文物局办公室关于组织赴突尼斯布匿罗马时期遗址出土文物研修班的通知" [ref=f11e258] [cursor=pointer]:
+                        - /url: /art/2026/5/13/art_2318_48249.html
+                      - generic [ref=f11e259]:
+                        - generic [ref=f11e260]: "["
+                        - generic [ref=f11e261]: 05-13
+                        - generic [ref=f11e262]: "]"
+                    - listitem:
+                      - link "“文物安全守护人”入围终评名单公示" [ref=f11e263] [cursor=pointer]:
+                        - /url: /art/2026/5/13/art_2318_48248.html
+                      - generic [ref=f11e264]:
+                        - generic [ref=f11e265]: "["
+                        - generic [ref=f11e266]: 05-13
+                        - generic [ref=f11e267]: "]"
+                    - listitem:
+                      - link "国家文物局办公室关于组织赴意大利文物预防性保护研修班的通知" [ref=f11e268] [cursor=pointer]:
+                        - /url: /art/2026/5/8/art_2318_48207.html
+                      - generic [ref=f11e269]:
+                        - generic [ref=f11e270]: "["
+                        - generic [ref=f11e271]: 05-08
+                        - generic [ref=f11e272]: "]"
+                    - listitem:
+                      - link "国家文物局办公室关于组织赴西班牙文物数字资源管理与利用研修班的通知" [ref=f11e273] [cursor=pointer]:
+                        - /url: /art/2026/5/8/art_2318_48206.html
+                      - generic [ref=f11e274]:
+                        - generic [ref=f11e275]: "["
+                        - generic [ref=f11e276]: 05-08
+                        - generic [ref=f11e277]: "]"
+              - cell [ref=f11e278]
+              - cell "政务公开 国家文物局2026年7至8月政府采购意向 [ 07-02 ] 国家文物局关于新叶村乡土建筑保护范围内省级历史文化（传统）村落保护利用重点村项目的复函 [ 06-25 ] 国家文物局办公室关于省级文物保护单位白云桥保护范围内S309荷梁线余姚段改建工程二期(海曙界至晓云村、斤岭下村至梁弄段)项目的复函 [ 06-25 ] 国家文物局办公室关于西沙埠遗址建设控制地带内青岛雀巢有限公司4#蒸发器项目的函 [ 06-24 ] 国家文物局关于良乡多宝佛塔保护范围及建设控制地带内良乡多宝佛塔环境整治工程项目的复函 [ 06-24 ] 国家文物局2026年7至8月政府采购意向 [ 06-24 ] 国家文物局关于老爷庙至西梁湾村天然气输配气管网铺设建设工程项目的复函 [ 06-23 ] 国家文物局关于拉加寺保护范围和建设控制地带内拉加镇防洪一期项目的复函 [ 06-22 ] 国家文物局关于徐州汉楚王墓群—狮子山楚王陵建设控制地带内徐州汉文化景区服务中心综合楼项目的批复 [ 06-22 ] 国家文物局关于在黑泉河村长城3段等保护范围及建设控制地带内进行芦家湾330千伏输电线路建设工程项目的复函 [ 06-18 ] 国家文物局关于在巴彦淖尔界壕2段保护范围及建设控制地带内进行乌拉盖河治理建设工程项目的复函 [ 06-18 ] 国家文物局关于洛南东汉帝陵保护范围一般保护区内高龙镇农副产品批发市场项目的批复 [ 06-17 ] 国家文物局关于大运河保护范围和建设控制地带内进行宿迁市废黄河（黄河故道）中泓治理工程设计方案（修订稿）的复函 [ 06-16 ] 国家文物局关于在三星堆遗址保护范围和建设控制地带内实施鸭子河三星堆段综合治理工程的复函 [ 06-16 ] 国家文物局办公室关于宝光寺建设控制地带内宝光博物馆建设项目的复函 [ 06-15 ] 国家文物局关于萧绍海塘（杭州段）保护范围内池杉路（北塘河绿带-横一路）项目的复函 [ 06-15 ]" [ref=f11e279]:
+                - table [ref=f11e280]:
+                  - rowgroup [ref=f11e281]:
+                    - row [ref=f11e282]:
+                      - cell [ref=f11e283]:
+                        - link "政务公开" [ref=f11e284] [cursor=pointer]:
+                          - /url: /col/col2398/index.html
+                      - cell [ref=f11e285]:
+                        - link [ref=f11e287] [cursor=pointer]:
+                          - /url: /col/col2398/index.html
+                - list [ref=f11e292]:
+                  - listitem:
+                    - link "国家文物局2026年7至8月政府采购意向" [ref=f11e293] [cursor=pointer]:
+                      - /url: /art/2026/7/2/art_2237_48368.html
+                    - generic [ref=f11e294]:
+                      - generic [ref=f11e295]: "["
+                      - generic [ref=f11e296]: 07-02
+                      - generic [ref=f11e297]: "]"
+                  - listitem:
+                    - link "国家文物局关于新叶村乡土建筑保护范围内省级历史文化（传统）村落保护利用重点村项目的复函" [ref=f11e298] [cursor=pointer]:
+                      - /url: /art/2026/6/25/art_2237_48357.html
+                    - generic [ref=f11e299]:
+                      - generic [ref=f11e300]: "["
+                      - generic [ref=f11e301]: 06-25
+                      - generic [ref=f11e302]: "]"
+                  - listitem:
+                    - link "国家文物局办公室关于省级文物保护单位白云桥保护范围内S309荷梁线余姚段改建工程二期(海曙界至晓云村、斤岭下村至梁弄段)项目的复函" [ref=f11e303] [cursor=pointer]:
+                      - /url: /art/2026/6/25/art_2237_48358.html
+                    - generic [ref=f11e304]:
+                      - generic [ref=f11e305]: "["
+                      - generic [ref=f11e306]: 06-25
+                      - generic [ref=f11e307]: "]"
+                  - listitem:
+                    - link "国家文物局办公室关于西沙埠遗址建设控制地带内青岛雀巢有限公司4#蒸发器项目的函" [ref=f11e308] [cursor=pointer]:
+                      - /url: /art/2026/6/24/art_2237_48359.html
+                    - generic [ref=f11e309]:
+                      - generic [ref=f11e310]: "["
+                      - generic [ref=f11e311]: 06-24
+                      - generic [ref=f11e312]: "]"
+                  - listitem:
+                    - link "国家文物局关于良乡多宝佛塔保护范围及建设控制地带内良乡多宝佛塔环境整治工程项目的复函" [ref=f11e313] [cursor=pointer]:
+                      - /url: /art/2026/6/24/art_2237_48360.html
+                    - generic [ref=f11e314]:
+                      - generic [ref=f11e315]: "["
+                      - generic [ref=f11e316]: 06-24
+                      - generic [ref=f11e317]: "]"
+                  - listitem:
+                    - link "国家文物局2026年7至8月政府采购意向" [ref=f11e318] [cursor=pointer]:
+                      - /url: /art/2026/6/24/art_2237_48355.html
+                    - generic [ref=f11e319]:
+                      - generic [ref=f11e320]: "["
+                      - generic [ref=f11e321]: 06-24
+                      - generic [ref=f11e322]: "]"
+                  - listitem:
+                    - link "国家文物局关于老爷庙至西梁湾村天然气输配气管网铺设建设工程项目的复函" [ref=f11e323] [cursor=pointer]:
+                      - /url: /art/2026/6/23/art_2237_48361.html
+                    - generic [ref=f11e324]:
+                      - generic [ref=f11e325]: "["
+                      - generic [ref=f11e326]: 06-23
+                      - generic [ref=f11e327]: "]"
+                  - listitem:
+                    - link "国家文物局关于拉加寺保护范围和建设控制地带内拉加镇防洪一期项目的复函" [ref=f11e328] [cursor=pointer]:
+                      - /url: /art/2026/6/22/art_2237_48362.html
+                    - generic [ref=f11e329]:
+                      - generic [ref=f11e330]: "["
+                      - generic [ref=f11e331]: 06-22
+                      - generic [ref=f11e332]: "]"
+                  - listitem:
+                    - link "国家文物局关于徐州汉楚王墓群—狮子山楚王陵建设控制地带内徐州汉文化景区服务中心综合楼项目的批复" [ref=f11e333] [cursor=pointer]:
+                      - /url: /art/2026/6/22/art_2237_48363.html
+                    - generic [ref=f11e334]:
+                      - generic [ref=f11e335]: "["
+                      - generic [ref=f11e336]: 06-22
+                      - generic [ref=f11e337]: "]"
+                  - listitem:
+                    - link "国家文物局关于在黑泉河村长城3段等保护范围及建设控制地带内进行芦家湾330千伏输电线路建设工程项目的复函" [ref=f11e338] [cursor=pointer]:
+                      - /url: /art/2026/6/18/art_2237_48341.html
+                    - generic [ref=f11e339]:
+                      - generic [ref=f11e340]: "["
+                      - generic [ref=f11e341]: 06-18
+                      - generic [ref=f11e342]: "]"
+                  - listitem:
+                    - link "国家文物局关于在巴彦淖尔界壕2段保护范围及建设控制地带内进行乌拉盖河治理建设工程项目的复函" [ref=f11e343] [cursor=pointer]:
+                      - /url: /art/2026/6/18/art_2237_48342.html
+                    - generic [ref=f11e344]:
+                      - generic [ref=f11e345]: "["
+                      - generic [ref=f11e346]: 06-18
+                      - generic [ref=f11e347]: "]"
+                  - listitem:
+                    - link "国家文物局关于洛南东汉帝陵保护范围一般保护区内高龙镇农副产品批发市场项目的批复" [ref=f11e348] [cursor=pointer]:
+                      - /url: /art/2026/6/17/art_2237_48343.html
+                    - generic [ref=f11e349]:
+                      - generic [ref=f11e350]: "["
+                      - generic [ref=f11e351]: 06-17
+                      - generic [ref=f11e352]: "]"
+                  - listitem:
+                    - link "国家文物局关于大运河保护范围和建设控制地带内进行宿迁市废黄河（黄河故道）中泓治理工程设计方案（修订稿）的复函" [ref=f11e353] [cursor=pointer]:
+                      - /url: /art/2026/6/16/art_2237_48344.html
+                    - generic [ref=f11e354]:
+                      - generic [ref=f11e355]: "["
+                      - generic [ref=f11e356]: 06-16
+                      - generic [ref=f11e357]: "]"
+                  - listitem:
+                    - link "国家文物局关于在三星堆遗址保护范围和建设控制地带内实施鸭子河三星堆段综合治理工程的复函" [ref=f11e358] [cursor=pointer]:
+                      - /url: /art/2026/6/16/art_2237_48345.html
+                    - generic [ref=f11e359]:
+                      - generic [ref=f11e360]: "["
+                      - generic [ref=f11e361]: 06-16
+                      - generic [ref=f11e362]: "]"
+                  - listitem:
+                    - link "国家文物局办公室关于宝光寺建设控制地带内宝光博物馆建设项目的复函" [ref=f11e363] [cursor=pointer]:
+                      - /url: /art/2026/6/15/art_2237_48346.html
+                    - generic [ref=f11e364]:
+                      - generic [ref=f11e365]: "["
+                      - generic [ref=f11e366]: 06-15
+                      - generic [ref=f11e367]: "]"
+                  - listitem:
+                    - link "国家文物局关于萧绍海塘（杭州段）保护范围内池杉路（北塘河绿带-横一路）项目的复函" [ref=f11e368] [cursor=pointer]:
+                      - /url: /art/2026/6/15/art_2237_48347.html
+                    - generic [ref=f11e369]:
+                      - generic [ref=f11e370]: "["
+                      - generic [ref=f11e371]: 06-15
+                      - generic [ref=f11e372]: "]"
+        - table [ref=f11e373]:
+          - rowgroup [ref=f11e374]:
+            - row [ref=f11e375]:
+              - cell [ref=f11e376]
+        - table [ref=f11e377]:
+          - rowgroup [ref=f11e378]:
+            - row [ref=f11e379]:
+              - cell [ref=f11e380]:
+                - table [ref=f11e381]:
+                  - rowgroup [ref=f11e382]:
+                    - row [ref=f11e383]:
+                      - cell [ref=f11e384]:
+                        - link "办事服务" [ref=f11e385] [cursor=pointer]:
+                          - /url: http://gl.sach.gov.cn/#/Home/index
+                      - cell [ref=f11e386]
+                - table [ref=f11e387]:
+                  - rowgroup [ref=f11e388]:
+                    - row [ref=f11e389]:
+                      - cell [ref=f11e390]:
+                        - link [ref=f11e392] [cursor=pointer]:
+                          - /url: /col/col2292/index.html
+                        - link [ref=f11e395] [cursor=pointer]:
+                          - /url: /col/col2262/index.html
+              - cell [ref=f11e397]
+              - cell [ref=f11e398]:
+                - table [ref=f11e399]:
+                  - rowgroup [ref=f11e400]:
+                    - row [ref=f11e401]:
+                      - cell [ref=f11e402]:
+                        - link "互动交流" [ref=f11e403] [cursor=pointer]:
+                          - /url: /col/col1066/index.html
+                      - cell [ref=f11e404]
+                - table [ref=f11e405]:
+                  - rowgroup [ref=f11e406]:
+                    - row [ref=f11e407]:
+                      - cell [ref=f11e408]:
+                        - table [ref=f11e410]:
+                          - rowgroup [ref=f11e411]:
+                            - row [ref=f11e412]:
+                              - cell [ref=f11e413]:
+                                - link [ref=f11e415] [cursor=pointer]:
+                                  - /url: /col/col1067/index.html
+                                - link "留言板" [ref=f11e418] [cursor=pointer]:
+                                  - /url: /col/col1067/index.html
+                              - cell [ref=f11e419]
+                              - cell [ref=f11e420]:
+                                - link "局长信箱" [ref=f11e422] [cursor=pointer]:
+                                  - /url: /col/col1065/index.html
+                                - link [ref=f11e424] [cursor=pointer]:
+                                  - /url: /col/col1065/index.html
+                              - cell [ref=f11e426]
+                              - cell [ref=f11e427]:
+                                - link [ref=f11e429] [cursor=pointer]:
+                                  - /url: /col/col1966/index.html
+                                - link "意见征集" [ref=f11e432] [cursor=pointer]:
+                                  - /url: /col/col1966/index.html
+                              - cell [ref=f11e433]
+                              - cell [ref=f11e434]:
+                                - link "解读 与回应" [ref=f11e436] [cursor=pointer]:
+                                  - /url: /col/col1967/index.html
+                                  - text: 解读与回应
+                                - link [ref=f11e438] [cursor=pointer]:
+                                  - /url: /col/col1967/index.html
+                              - cell [ref=f11e440]
+                              - cell [ref=f11e441]:
+                                - link [ref=f11e443] [cursor=pointer]:
+                                  - /url: /vipchat/
+                                - link "新闻 发布会" [ref=f11e446] [cursor=pointer]:
+                                  - /url: /vipchat/
+                                  - text: 新闻发布会
+      - generic [ref=f11e447]:
+        - table [ref=f11e448]:
+          - rowgroup [ref=f11e449]:
+            - row [ref=f11e450]:
+              - cell [ref=f11e451]
+        - table [ref=f11e452]:
+          - rowgroup [ref=f11e453]:
+            - row [ref=f11e454]:
+              - cell [ref=f11e455]
+        - table [ref=f11e456]:
+          - rowgroup [ref=f11e457]:
+            - row [ref=f11e458]:
+              - cell [ref=f11e459]:
+                - list [ref=f11e461]:
+                  - listitem [ref=f11e462] [cursor=pointer]:
+                    - link "政务信息系统整合平台▼" [ref=f11e463]:
+                      - /url: /col/col1053/index.html
+        - table [ref=f11e464]:
+          - rowgroup [ref=f11e465]:
+            - row [ref=f11e466]:
+              - cell [ref=f11e467]
+        - table [ref=f11e468]:
+          - rowgroup [ref=f11e469]:
+            - row [ref=f11e470]:
+              - cell [ref=f11e471]:
+                - link "专题" [ref=f11e472] [cursor=pointer]:
+                  - /url: /col/col1049/index.html
+              - cell [ref=f11e473]:
+                - link [ref=f11e475] [cursor=pointer]:
+                  - /url: /col/col1049/index.html
+        - table [ref=f11e477]:
+          - rowgroup [ref=f11e478]:
+            - row [ref=f11e479]:
+              - cell [ref=f11e480]:
+                - generic [ref=f11e482]:
+                  - link [ref=f11e484] [cursor=pointer]:
+                    - /url: http://www.ncha.gov.cn/col/col2864/index.html
+                  - link [ref=f11e487] [cursor=pointer]:
+                    - /url: http://www.ncha.gov.cn/col/col2853/index.html
+                  - link [ref=f11e490] [cursor=pointer]:
+                    - /url: http://www.ncha.gov.cn/col/col2849/index.html
+                  - link [ref=f11e493] [cursor=pointer]:
+                    - /url: http://www.ncha.gov.cn/col/col2841/index.html
+        - table [ref=f11e496]:
+          - rowgroup [ref=f11e497]:
+            - row [ref=f11e498]:
+              - cell [ref=f11e499]
+        - table [ref=f11e500]:
+          - rowgroup [ref=f11e501]:
+            - row [ref=f11e502]:
+              - cell [ref=f11e503]:
+                - link [ref=f11e505] [cursor=pointer]:
+                  - /url: http://nb.ncha.gov.cn/museum.html
+                - link [ref=f11e508] [cursor=pointer]:
+                  - /url: http://jb.ncha.gov.cn/
+                - link [ref=f11e511] [cursor=pointer]:
+                  - /url: https://liuyan.www.gov.cn/2025wwzfgzbgtjy/bmdf.html?q=gjwwj
+                - link [ref=f11e514] [cursor=pointer]:
+                  - /url: https://www.gov.cn/zhengce/zczhjd/
+        - table [ref=f11e516]:
+          - rowgroup [ref=f11e517]:
+            - row [ref=f11e518]:
+              - cell [ref=f11e519]
+        - table [ref=f11e520]:
+          - rowgroup [ref=f11e521]:
+            - row [ref=f11e522]:
+              - cell [ref=f11e523]
+        - table [ref=f11e524]:
+          - rowgroup [ref=f11e525]:
+            - row [ref=f11e526]:
+              - cell [ref=f11e527]:
+                - link [ref=f11e530] [cursor=pointer]:
+                  - /url: http://mail.ncha.gov.cn/index.php
+                  - paragraph [ref=f11e531]
+    - table [ref=f11e534]:
+      - rowgroup [ref=f11e535]:
+        - row [ref=f11e536]:
+          - cell "相关链接：" [ref=f11e537]
+          - cell [ref=f11e538]:
+            - link "中央人民政府网站" [ref=f11e539] [cursor=pointer]:
+              - /url: http://www.gov.cn
+          - cell "政府网站" [ref=f11e540]:
+            - list:
+              - listitem [ref=f11e541]:
+                - generic [ref=f11e542]: 政府网站
+          - cell "直属单位网站" [ref=f11e543]:
+            - list:
+              - listitem [ref=f11e544]:
+                - generic [ref=f11e545]: 直属单位网站
+          - cell "主管社会组织网站" [ref=f11e546]:
+            - list:
+              - listitem [ref=f11e547]:
+                - generic [ref=f11e548]: 主管社会组织网站
+  - generic [ref=f11e551]:
+    - link "联系我们" [ref=f11e552] [cursor=pointer]:
+      - /url: /col/col1682/index.html
+    - text: "|"
+    - link "网站声明" [ref=f11e553] [cursor=pointer]:
+      - /url: /col/col1748/index.html
+  - generic [ref=f11e554]:
+    - generic [ref=f11e555]:
+      - paragraph [ref=f11e556]:
+        - text: Copyright Reserved 2014-2025 版权所有 国家文物局
+        - link "京ICP备13034673号-2" [ref=f11e557] [cursor=pointer]:
+          - /url: http://beian.miit.gov.cn/
+      - paragraph [ref=f11e558]: 网站管理：中国文物报社 技术服务电话：86-10-84078838-6168
+      - paragraph [ref=f11e559]:
+        - text: 网站标识码：bm72000002
+        - link "京公网安备 11010102003995号" [ref=f11e560] [cursor=pointer]:
+          - /url: http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010102003995
+    - table [ref=f11e563]:
+      - rowgroup [ref=f11e564]:
+        - row [ref=f11e565]:
+          - cell [ref=f11e566]:
+            - link [ref=f11e567] [cursor=pointer]:
+              - /url: http://bszs.conac.cn/sitename?method=show&id=0C1EC20C5B04404AE053012819AC0B79
+          - cell [ref=f11e569]
+          - cell [ref=f11e570]:
+            - link [ref=f11e571] [cursor=pointer]:
+              - /url: https://zfwzgl.www.gov.cn/exposure/jiucuo.html?site_code=bm72000002&url=http%3A%2F%2Fwww.ncha.gov.cn%2F
+    - generic [ref=f11e572]:
+      - paragraph [ref=f11e584]
+      - paragraph [ref=f11e586]
