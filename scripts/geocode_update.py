@@ -96,6 +96,11 @@ def extract_fields(content):
     }
 
 
+def resolve_city_name(document_city, directory_city):
+    """Return the document city, falling back to its scanned city directory."""
+    return document_city.strip() or directory_city.strip()
+
+
 def update_md_coords(md_path, new_lng, new_lat):
     """更新 Markdown 文件中的经纬度"""
     content = md_path.read_text(encoding='utf-8')
@@ -175,7 +180,7 @@ def main():
 
         name = fields["name"]
         addr = fields["address"]
-        city_name = fields["city"]
+        city_name = resolve_city_name(fields["city"], city)
         old_lat = fields["old_lat"]
         old_lng = fields["old_lng"]
 
