@@ -90,6 +90,8 @@ instead of copying potentially stale option descriptions into documentation.
 - Prefer Wikimedia Commons, an attraction's official site, or another source
   with a compatible open license. Confirm usage rights for every non-original
   image, including images supplied by a user.
+- Prefer recent, high-resolution, landscape-oriented photos that clearly show
+  the attraction's current appearance.
 - Download local images into the relevant city `images/` directory. Match the
   attraction Markdown basename and add `_compressed` to the compressed file,
   for example `广州市-海珠区-广州塔_compressed.jpg`.
