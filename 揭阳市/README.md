@@ -72,8 +72,8 @@
 
 ## 数据来源
 
-- 揭阳市文化广电旅游体育局
-- 各区县人民政府官网
+- [揭阳市文化广电旅游体育局](http://www.jieyang.gov.cn/wglt/index.html)
+- [揭阳市人民政府](http://www.jieyang.gov.cn/)
 
 ## 最后更新时间
 
