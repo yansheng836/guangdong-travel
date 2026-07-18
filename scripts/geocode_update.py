@@ -108,10 +108,11 @@ def update_md_coords(md_path, new_lng, new_lat):
     # 替换经纬度行
     new_coord_line = f'{new_lat}°N, {new_lng}°E'
     content = re.sub(
-        r'[\d.]+\s*°?[NS]?[,、\s]\s*[\d.]+\s*°?[EW]?',
-        new_coord_line,
+        r'(\*\*经纬度\*\*[：:]\s*).+?$',
+        rf'\g<1>{new_coord_line}',
         content,
         count=1,
+        flags=re.MULTILINE,
     )
 
     md_path.write_text(content, encoding='utf-8')
