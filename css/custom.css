@@ -717,6 +717,75 @@ a:hover {
   line-height: 1.7;
 }
 
+/* 数据来源链接 - 与项目蓝绿主题保持一致 */
+.markdown-section h2[id="数据来源"] + ul {
+  display: grid;
+  gap: 10px;
+  margin: 18px 0 24px;
+  padding: 0;
+  list-style: none;
+}
+
+.markdown-section h2[id="数据来源"] + ul li {
+  position: relative;
+  margin: 0;
+}
+
+.markdown-section h2[id="数据来源"] + ul a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 11px 44px 11px 16px;
+  overflow-wrap: anywhere;
+  color: var(--primary-dark);
+  font-weight: 500;
+  line-height: 1.55;
+  text-decoration: none;
+  background: linear-gradient(135deg, #f0f9ff 0%, #ecfdf5 100%);
+  border: 1px solid rgba(37, 99, 235, 0.16);
+  border-left: 4px solid var(--secondary-color);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.markdown-section h2[id="数据来源"] + ul a::before {
+  content: "◈";
+  flex: 0 0 auto;
+  color: var(--secondary-color);
+  font-size: 0.9em;
+}
+
+.markdown-section h2[id="数据来源"] + ul a::after {
+  content: "↗";
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  color: var(--primary-color);
+  font-size: 1.05em;
+  transform: translateY(-50%);
+  transition: transform 0.2s ease;
+}
+
+.markdown-section h2[id="数据来源"] + ul a:hover {
+  color: var(--primary-dark);
+  text-decoration: none;
+  background: linear-gradient(135deg, #e0f2fe 0%, #dcfce7 100%);
+  border-color: rgba(5, 150, 105, 0.35);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.markdown-section h2[id="数据来源"] + ul a:hover::after {
+  transform: translate(2px, calc(-50% - 2px));
+}
+
+.markdown-section h2[id="数据来源"] + ul a:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, 0.28);
+  outline-offset: 2px;
+}
+
 /* ============================================
    按钮和链接增强
    ============================================ */
