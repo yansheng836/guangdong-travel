@@ -2,7 +2,9 @@
 
 ## 景点图片
 
-> 图片来源：[Wikimedia Commons](https://commons.wikimedia.org/wiki/Main_Page) · 许可证：CC BY-SA 4.0
+![四会LIVE直播基地](images/肇庆市-四会市-四会LIVE直播基地景区_compressed.jpg)
+
+> 图片来源：[搜狐网](http://5b0988e595225.cdn.sohucs.com/images/20190827/32033e88068e445a83b9a20becf1ba7d.jpeg)
 
 ## 基本信息
 
@@ -47,4 +49,5 @@
 
 ## 最后更新时间
 
-2026-07-18
+2026-07-19
+
